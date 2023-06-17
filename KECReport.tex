@@ -10,9 +10,9 @@
 \newcommand{\submittedBy}%Specify Names and Roll/Symbol Numbers of the Project Group Members
 {
 %Edit Member Names and Roll/Symbol No. and adjust width (\makebox[width]) if necessary 
-\makebox[6cm]{Aman Devkota  \hfill[28808]}\\
-\makebox[6cm]{Ankur Karmacharya  \hfill[28811]}\\
-\makebox[6cm]{Prashad Adhikary  \hfill[28852]}
+\makebox[7cm]{Aman Devkota  \hfill[KAN076BCT010]}\\
+\makebox[7cm]{Ankur Karmacharya  \hfill[KAN076BCT013]}\\
+\makebox[7cm]{Prashad Adhikary  \hfill[KAN076BCT056]}
 %\makebox[9cm]{Member Name \hfill [Roll/Symbol No.]}\\
 } % Note that You must write your "Symbol Numbers"(Exam Roll Numbers) for Final Defenses
 
@@ -191,37 +191,29 @@ The purpose of the economic feasibility assessment is to determine the positive 
 \vspace{-18pt}
 \subsection{Schedule Feasibility}
 \vspace{-18pt}
-%\begin{figure}[!h] % tbh means top, bottom or here (priority: left to right)
-%\begin{center}
+\begin{figure}[!h] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
 	%\includegraphics[width = 3in]{images/logo.png}
-	%\includegraphics[width=6in]{Screenshot 2023-03-23 005901.jpg} 
-	%\caption{Gantt Chart} %figure name
-	%\label{figGanttChart} % for referencing
-%\end{center}
-%\end{figure}
+	\includegraphics[width=6in]{images/gc2.png} 
+	\caption{Gantt Chart} %figure name
+	\label{figGanttChart} % for referencing
+\end{center}
+\end{figure}
 \chapter{Literature Review}
 \vspace{-18pt}
 \section{Related Projects}
 \vspace{-18pt}
-\subsection{Zillow}
+\subsection{AI Stock Finder}
 \vspace{-18pt}
- Zillow is a popular online real estate marketplace that provides an automated valuation model called the Zestimate. This model uses a combination of data from public records, user-submitted data, and machine learning algorithms to predict the value of a home.
+It is a website that uses artificial intelligence algorithm to produce its forecasts based on 140 variables to yield high quality buy and sell signals. 
  \vspace{-10pt}
-\subsection{Redfin's Home Value Estimator}
+\subsection{Wallstreetzen Stock Forecast}
 \vspace{-18pt}
-Redfin is another online real estate marketplace that provides a home value estimator tool that uses machine learning algorithms to predict the value of a home based on its location, features, and recent sales in the area.
-\vspace{-10pt}
-\subsection{House Canary}
-\vspace{-18pt}
-HouseCanary is a real estate analytics company that provides a range of services, including home value estimates and forecasts, neighborhood insights, and market analytics. Their home value estimates are based on a proprietary machine learning model that analyzes millions of data points.
-\vspace{-10pt}
-\subsection{Propmix.io}
-\vspace{-18pt}
-PropMix.io is a real estate data and analytics platform that offers a range of tools for real estate professionals, including a home value estimator that uses machine learning algorithms to predict the value of a home based on its features and location.
+WallStreetZen provides stock predictions and forecasts for the next 5 years. Their platform offers stock market forecasts for 2023, 2024, 2025, 2026, and 2027, along with analyst forecasts, price targets, buy/sell ratings, revenue/earnings forecasts, and more [1]. Additionally, WallStreetZen offers a stock screener for identifying high-growth stocks based on analyst projections for the next 3 years [2]. While it is important to note that stock market predictions and forecasts should be taken with caution, WallStreetZen provides a valuable tool for investors seeking insights into potential investment opportunities and market.
 \vspace{-10pt}
 \section{Related Works}
 \vspace{-18pt}
-Anirudh Kaushal and Achyut Shankar researched in detail about house price prediction using multiple linear regression method. In the paper “House Price Prediction Using Multiple Linear Regression” published on April 25, 2021 there is explanation about filtering of data set, data processing, training and evaluating multiple linear regression model. \cite{kaushal2021house} Manasa, J., Gupta, R., \& Narahari, N. S. studied and compared the algorithms for estimation of price of houses in city of Bengaluru in the paper “Machine learning based predicting house prices using regression techniques”. \cite{manasa2020machine} M. Thamarai, S P. Malarvizhi have compared the decision tree and regression algorithms in the paper “House Price Prediction Modeling Using Machine Learning”. The basis of comparison was accuracy, MAE, MSE and RMSE. \cite{thamarai2020house} Rana, V. S., Mondal, J., Sharma, A., \& Kashyap, I. have studied in detail about the machine learning algorithms and compared the results obtained by each to learn about the algorithm most suitable to use in the house price prediction system in their paper “House Price Prediction Using Optimal Regression Techniques”.\cite{Rana2020HousePP} Madhuri, C. R., Anuradha, G., \& Pujitha, M. V. studied on different regression algorithms. In the paper “House price prediction using regression techniques: a comparative study” published on March, 2019, there is explanation about different types of regression methods and their accuracy to predict the values. \cite{madhuri2019house}
+Arjun Singh Saud and Subarna Shakya researched in detail about stock price prediction using different deep learning models. In the paper “Analysis of look back period for stock price prediction with RNN variants: A case study on banking sector of NEPSE” published on 2020, there is comparison of the predictions by the deep learning models used in the study: LSTM, VRNN and GRU. \cite{kaushal2021house} Manasa, J., Gupta, R., \& Narahari, N. S. studied and compared the algorithms for estimation of price of houses in city of Bengaluru in the paper “Machine learning based predicting house prices using regression techniques”. \cite{manasa2020machine} 
 \chapter{Methodology}
 \vspace{-18pt}
   \section{Working Mechanism}
@@ -231,7 +223,7 @@ depicted in the diagram given below:
 \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=3in]{images/fc.jpg} 
+	\includegraphics[width=2in]{images/wm.jpg} 
 	\caption{Working mechanism of Stock Price Prediction System} %figure name
 	\label{Working mechanism of Stock Price Prediction System} % for referencing
 \end{center}
@@ -273,180 +265,101 @@ The MFI communicates a possible reversal in time and provides a signal for furth
 	\label{MFI} % for referencing
 \end{center}
 \end{figure}
-\subsection{Add dummy variables}
-\vspace{-18pt}
-The parameters in the data set like addresses are string values but the multiple linear regression can only accept numerical values so they are need to be converted into numerical values. In order to convert it we need to give them the value 0 and 1 on the basis that they are available but there may arise dummy trap problem (when two independent parameters affect each other which can cause conflict in multiple linear regression). So to solve this problem the dummy variables should be one less than the n number of string valued parameters.
-\subsection{Filter the data set}
-\vspace{-18pt}
-All the parameters in the raw data set are not needed for multiple linear regression as some of the parameters have little or no significance in changing the price of the house. So to filter out the useless parameters, we find the single correlation between price of the house and the parameters. Correlation coefficients are used to measure the strength of the linear relationship between two variables. A correlation coefficient greater than zero indicates a positive relationship while a value less than zero signifies a negative relationship.If the correlation is very low or near to zero, they can be neglected.\\
-Mathematical calculation for correlation
-\begin{equation}
-(r_{xy}) =\frac {(n\sum{xy}-\sum{x}\sum{y})}{(\sqrt{[n\sum{x^2}-(\sum{x})^2][n\sum{y^2}-(\sum{y})^2]}}
-\end{equation}
 \subsection{Split the data set into train set and test set}
 \vspace{-18pt}
 The data set is divided in train set and test set so that the train set can be used for training the model.
-\subsection{Statistical Calculations}
+\subsection{Data Preprocessing}
 \vspace{-18pt}
-For the multiple linear regression, we need to find the values for $\sum{x},\sum{xy},...\sum{x_{n}}$ etc. which are calculated in this stage.
-\subsection{Representing the normal equation of multiple linear regression in matrix form}
+Data preprocessing consists of three major steps: Data cleaning, Feature selection and Time series analysis. Data cleaning includes removing or handling missing values, outliers, and errors in the data. This may involve techniques like imputation, interpolation, or removing problematic data points. Identifying the relevant features or variables that may affect stock prices. This could include factors like historical prices, trading volumes, technical indicators (e.g., moving averages, RSI), fundamental data (e.g., earnings, revenue), or macroeconomic indicators (e.g., interest rates, GDP) comes under Feature selection and Time series analysis consists of Techniques such as identifying trends, seasonality, or auto correlation can be applied to analyze and preprocess the data as stock price data is often represented as a time series. 
+\subsection{Train the model}
 \vspace{-18pt}
-The equation of plane is
-\begin{equation}
-x=w_{0}+w_{1}x_{1}+w_{2}x_{2}+.....w_{N}x_{N}
-\end{equation}
-Here,$ x_{1},x_{2},....x_{N}$ are independent parameter variables and x is dependent parameter variable. The intercept is $w_{0}$ and coefficients are $w_{1},w_{2},....w_{N}$.\\
-Now to find the values of $w_{0},w_{1},w_{2},...w_{N}$, we need the normal equations which are as follows:
-\begin{eqnarray}
-\sum{x}= nw_{0}+w_{1}\sum{x_{1}}+w_{2}\sum{x_{2}}+.....w_{N}\sum{x_{N}}\\
-\sum{x x_{1}}= w_{0}\sum{x_{1}}+w_{1}\sum{x_{1}}^2+w_{2}\sum{x_{1}x_{2}}+.....w_{N}\sum{x_{1}x_{N}}\\
-\sum{x x_{2}}= w_{0}\sum{x_{2}}+w_{1}\sum{x_{1}x_{2}}+w_{2}\sum{x_{2}}^2+.....w_{N}\sum{x_{2}x_{N}}
-\end{eqnarray}
+The models used in this project for stock price prediction are: Vanilla RNN (VRNN), Long Shortterm Memory (LSTM), and Gated Recurrent Unit (GRU).
+\par 
+\subsubsection{Long Short term Memory (LSTM)}
+LSTM is a popular deep learning technique in RNN for time series prediction. While standard RNNs outperform traditional networks in preserving information, they are not very effective in learning long term dependencies due to the vanishing gradient problem. An LSTM is well-suited to classify and/or predict time-series data. There are several architectures of LSTM units. A common architecture is composed of a memory cell, an input gate, an output gate and a forget gate. The mathematical formulation of the LSTM cell is given below:
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
-:
+	%\includegraphics[width = 3in]{images/logo.png}
+	\includegraphics[width=4in]{images/lstmform.jpg} 
 \end{center}
-\begin{equation}
-\sum{x x_{N}}= w_{0}\sum{x_{N}}+w_{1}\sum{x_{1}x_{N}}+w_{2}\sum{x_{2}x_{N}}+.....w_{N}\sum{x_{N}}^2
-\end{equation}
-Python does not recognize equations so we need to represent these equations in matrix form for further calculations.
-\subsection{ Calculation of intercept and coefficients using Gauss Elimination}
+\end{figure}
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	%\includegraphics[width = 3in]{images/logo.png}
+	\includegraphics[width=6in]{images/l1.png} 
+	\caption{LSTM} %figure name
+	\label{LSTM} % for referencing
+\end{center}
+\end{figure}
+\subsubsection{Vanilla RNN (VRNN)}
+It is the most basic form of a recurrent neural network. The simplest form of VRNN can be represented as in the figure given below. Normally, the tanh activation function is used in the hidden recurrent layer and the activation function for the output layer is selected according to the need of the problem to be solved. The operation of vanilla RNN can be expressed mathematically as below:\par
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	%\includegraphics[width = 3in]{images/logo.png}
+	\includegraphics[width=3in]{images/vform.jpg} 
+\end{center}
+\end{figure}
+where $X_t$ is input at time t, $H_t$ is state info at time t, $W_{xh},W_{hh}$ and $W_{xo}$ are weight matrices.
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	%\includegraphics[width = 3in]{images/logo.png}
+	\includegraphics[width=4in]{images/vrnn.jpg} 
+	\caption{VRNN} %figure name
+	\label{VRNN} % for referencing
+\end{center}
+\end{figure}
+\subsubsection{Gated Recurrent Unit Network}
+GRU is also a type of RNN architecture and aims to solve the vanishing gradient problem. GRU is similar to the LSTM but simplified in structure. GRU uses two gates: update gate and reset gate. The update gate of GRU is equivalent to the forget gate and input gate of LSTM. GRU has fewer parameters and thus may train faster. GRU cell takes two different pieces of information: the current input sequence $x_t$ , the short-term memory from the previous cell $H_{t-1}$, at time t. The update gate carries the long-term dependencies in GRU. It determines the past information that needs to be passed into the next step. The reset gate takes the information from $x_t$ and $H_{t-1}$ and produces the output between 0 and 1 through the sigmoid layer and then it identifies which information to discard from the previous hidden state $H_{t-1}$. When the value is 1, it stores all the information in the cell while with a value of 0, it forgets all the information from the previous hidden state. Based on empirical evidence, LSTM and GRU have proven their effectiveness on many machine learning tasks. The operation of GRU network can be expressed as follows: \par 
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	%\includegraphics[width = 3in]{images/logo.png}
+	\includegraphics[width=4in]{images/gform.jpg} 
+	 %figure name
+	 % for referencing
+\end{center}
+\end{figure}
+where Z and R are update and reset gates and $H_t$ is hidden state.
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	%\includegraphics[width = 3in]{images/logo.png}
+	\includegraphics[width=5in]{images/gfig.png} 
+	\caption{GRU network} %figure name
+	\label{GRU network} % for referencing
+\end{center}
+\end{figure}
+\subsection{Predict the stock price}
 \vspace{-18pt}
-To find the values of $w_{0},w_{1},w_{2},...w_{N}$, we need to solve the matrices. For this we use the Gauss Elimination method.\\
-Algorithm:
+Once the model is trained and evaluated, it can be used to make predictions on new, unseen data. This involves feeding the input features of the new data into the trained model, which then generates predictions for the corresponding stock prices.
+\subsection{Check for accuracy}
 \vspace{-18pt}
-\begin{enumerate}
-\item Start
-\item Declare the variables and read the order of the matrix N
-\item Take the coefficients of the linear equations as:\\
-Do for k= 1 to n\\
-Do for j = 1 to n+1\\
-Read a[k][j]\\
-End for j\\
-End for k
-\item Do for k= 1 to n-1\\
-Do for i= k+1 to n\\
-Do for j= k+1 to n+1\\
-a[i][j] = a[i][j] -a[i][k]/a[k][k]*a[k][j]\\
-End for j\\
-End for i\\
-End for k
-\item Compute x[n] = a[n][n+1]/a[n][n]
-\item Do for k= n-1 to 1\\
-sum = 0\\
-Do for j = k+1 to n\\
-sum += a[k][j]*x[j]\\
-End for j\\
-x[k] = 1/a[k][k] * (a[k][n+1] - sum)\\
-End for k
-\item Display the result x[k]
-\item Stop 
-\end{enumerate}
-\subsection{Calculation and Evaluation of predicted price}
-\vspace{-18pt}
-Now the calculated values of intercept and coefficients are inserted in the equation (3.2) to calculate the predicted price.\\
-We evaluated model’s performance using metrics: the coefficient of determination $R^2$, Root Mean Squared Error(RMSE).\\
-RMSE: It can be defined as the standard sample deviation between the predicted values and the observed ones. It is to be noted that unit of RMSE is same as dependent variable y .The lower RMSE values are indicative of a better fit model. If the model's primary objective is prediction then RMSE is a stronger measure.\\
-R-squared: The R-square value provides a measure of how much the model replicates the actual results, based on the ratio of total variation of outcomes as explained in the model.The higher the R-squared, the better the model fits the data given. The R-squared value ranges from 0 to 1, representing the percentage of a squared correlation between the target variable's expected and real values. But in case of multiple linear regressions, R-squared value may increase with increasing features even though the model is not actually improving. A related, Adjusted R-squared statistic can be used to address this disadvantage. This measures the model's goodness and penalizes the model to use more predictors.
+Mean Absolute Percentage Error (MAPE) is a measure of prediction accuracy in statistics. It is calculated as the average of the unsigned percentage error, which is the absolute value of the difference between the actual value and the forecast value divided by the actual value, multiplied by 100. The formula for Mean Absolute Percentage Error is given as:\par 
+M = $\frac{1}{n} \sum_{t=1}^{n} | \frac{A_t - F_t}{A_t}|$
 \section{System Diagram}
 \vspace{-18pt}
 \subsection{Use case diagram}
 \newpage 
 \begin{figure}
 	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=6in]{UseCaseDiagram1.png} 
-	\caption{Use case Diagram of House Price Prediction System} %figure name
-	\label{Use case Diagram of House Price Prediction System} % for referencing
-\end{figure}
-\newpage
- \subsection{DFD level diagram}
-\begin{figure}
-\begin{center}
-	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=5in]{dfd0.png} 
-	\caption{DFD Level 0 diagram of House Price Prediction System} %figure name
-	\label{DFD Level 0 diagram of House Price Prediction System} % for referencing
-\end{center}
-\end{figure}
-\begin{figure}
-\begin{center}
-	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=5in]{dfd12.png} 
-	\caption{DFD Level 1 diagram of House Price Prediction System} %figure name
-	\label{DFD Level 1 diagram of House Price Prediction system} % for referencing
-\end{center}
+	\includegraphics[width=6in]{images/ucd.jpg} 
+	\caption{Use case Diagram of Stock Price Prediction System} %figure name
+	\label{Use case Diagram of Stock Price Prediction System} % for referencing
 \end{figure}
 \newpage
 \subsection{Software Development Model}
+\vspace{-18pt}
  \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[scale=1]{incre.png} 
+	\includegraphics[width=8in]{images/sdlc1.png} 
 	\caption{Incremental Model} %figure name
 	\label{Incremental Model} % for referencing
 \end{center}
 \end{figure}
  Incremental model is a method of software engineering that combines the elements of waterfall model in iterative manner. It involves both development and maintenance. In this model requirements are broken down into multiple modules. Incremental development is done in steps from analysis design, implementation, testing/verification, maintenance. Each iteration passes through the requirements, design, coding and testing phases. The first increment is often a core product where the necessary requirements are addressed, and the extra features are added in the next increments. The core product is delivered to the client. Once the core product is analyzed by the client, there is plan development for the next increment.\\
-\chapter{Results and Discussion}
-\section{Result}
+\chapter{Epilogue}
+\section{Expected Output}
 \vspace{-18pt}
-We have completed the design and development of the project along with obtaining the desired output of the project. The project currently takes in location, area(square feet), bhk and balcony and predicts the price of the house through linear regression. The interface of the project is shown below: \par
-\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
-\begin{center}
-	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=5in]{hh1.jpg} 
-	\caption{Home Page} %figure name
-	\label{Home Page} % for referencing
-\end{center}
-\end{figure}
-\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
-\begin{center}
-	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=5in]{heatmap.png} 
-	\caption{Heat map for correlation } %figure name
-	\label{Heat map for correlation} % for referencing
-\end{center}
-\end{figure}
-From Figure 4.2, we can see that the correlation between bathroom and bhk is very high so we can ignore one of them. In our case, we have ignored bathroom.
-\newpage
-\begin{figure} % tbh means top, bottom or here (priority: left to right)
-\begin{center}
-	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=6in]{scplot.png} 
-	\caption{Scatter plot } %figure name
-	\label{Scatter plot} % for referencing
-\end{center}
-\end{figure}
-From the above figure, it can be concluded that for some data points, the actual price is very close to the predicted price which means that for some data points the model is highly accurate. However, the figure also shows that for some points the difference between the actual price and the predicted price is large which shows that for some data 
-points the result is less accurate. Overall, we can say that the model has a decent amount of accuracy.
-\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
-\begin{center}
-	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=6in]{ww.jpg} 
-	\caption{Evaluation metrics } %figure name
-	\label{Evaluation metrics} % for referencing
-\end{center}
-\end{figure}
-%\newpage
-\section{Discussion}
-\vspace{-18pt}
-House Price Predictor system is a website that predicts the prices of houses based on location, area, number of balconies and bhk. For front end development of the website, we have used HTML,CSS and JS. We used Pandas and numpy libraries for accessing dataframe. Matplotlib is used for data visualisation. We have done predictions with the help of Linear Regression, Correlation and Gauss Elimination method. Evaluation of the system was done by R-squared, Mean Squared Error and Root Mean Squared Error. Flask framework was used to connect the front end and back end of our website. 
-\section{Limitations}
-\vspace{-18pt}
-\begin{enumerate}
-\item  Outliers can have huge effects on the regression.
-\item Linear Regression also looks at a relationship between the mean of the dependent variables and the independent variables. Just as the mean is not a complete description of a single variable, linear regression is not a complete description of relationships among variables.
-\end{enumerate} 
-\chapter{Conclusion and Future Enhancements}
-\vspace{-18pt}
-\section{Conclusion}
-\vspace{-18pt}
-In this project, we have used the regression model to predict the price of different houses. It comes under the area of supervised learning which is one of the types of machine learning. All the steps required for the successful completion of the house price prediction system have been completed.
-\section{Future Enhancements}
-\vspace{-18pt}
-\begin{enumerate}
-\item increase and update the data set on a regular basis
-\item add locations for Nepal
-\end{enumerate}
+Upon the completion of the project, the system will be able to predict the price of the stock the user selects.
 %\chapter*{References}
 %Reference
 \renewcommand\bibname{References} % Change heading to References
