@@ -121,11 +121,11 @@ VRNN: Vanilla Recurrent Neural Network\\
 \vspace{-18pt}
 \section{Background}\label{sec:bkgrnd}%label your section if you require to refer them somewhere else in your document.
 \vspace{-18pt}
-The stock price is determined by the highest price a buyer is willing to pay or the lowest price a seller is willing to accept. Supply and demand are key factors that can affect stock prices. High demand can lead to an increase in stock price, while high supply can lead to a decrease. However, it is difficult to determine the exact factors that contribute to changes in demand and supply. Stock market prediction involves forecasting the future value of a stock. Financial analysts use two main schools of thought for analyzing and predicting stock markets: technical analysis and fundamental analysis. \cite{}%subarna
+The stock price is determined by the highest price a buyer is willing to pay or the lowest price a seller is willing to accept. Supply and demand are key factors that can affect stock prices. High demand can lead to an increase in stock price, while high supply can lead to a decrease. However, it is difficult to determine the exact factors that contribute to changes in demand and supply. Stock market prediction involves forecasting the future value of a stock. Financial analysts use two main schools of thought for analyzing and predicting stock markets: technical analysis and fundamental analysis. \cite{saud2020analysis}%subarna
 \par
- Machine learning models can learn a function by analyzing data without explicit programming. The performance of these algorithms depends on the representation of the data. However, stock market time-series data is difficult to map and is best described as a random walk, making feature engineering and prediction challenging. Therefore, deep learning models are the best available tool for stock market prediction.\cite{}%purano
+ Machine learning models can learn a function by analyzing data without explicit programming. The performance of these algorithms depends on the representation of the data. However, stock market time-series data is difficult to map and is best described as a random walk, making feature engineering and prediction challenging. Therefore, deep learning models are the best available tool for stock market prediction.\cite{saud2019analysis}%purano
  \par
- There are two schools of thought in developing predictive models for estimating stock prices. Classical thinking uses historical facts and indicators to predict future stock prices, often through variations of Autoregressive Integrated Moving Average (ARIMA) models. However, these statistical models may not efficiently capture the noisy and nonlinear behavior of stock market data. Modern theory assumes that historical data cannot reflect the exact upcoming structure due to inherent non-linearity in stock market data. With the rapid advancement of artificial intelligence and machine learning techniques, availability of large-scale data, and increased computational capabilities, robust machine learning models can capture nonlinear behavior and predict stock prices.\cite{}%meetwala
+ There are two schools of thought in developing predictive models for estimating stock prices. Classical thinking uses historical facts and indicators to predict future stock prices, often through variations of Autoregressive Integrated Moving Average (ARIMA) models. However, these statistical models may not efficiently capture the noisy and nonlinear behavior of stock market data. Modern theory assumes that historical data cannot reflect the exact upcoming structure due to inherent non-linearity in stock market data. With the rapid advancement of artificial intelligence and machine learning techniques, availability of large-scale data, and increased computational capabilities, robust machine learning models can capture nonlinear behavior and predict stock prices.\cite{pokhrel2022predicting}%meetwala
 
 \section{Problem Statement}
 \vspace{-18pt}
@@ -378,7 +378,7 @@ M = $\frac{1}{n} \sum_{t=1}^{n} | \frac{A_t - F_t}{A_t}|$
 Upon the completion of the project, the system will be able to predict the price of the stock the user selects.
 %\chapter*{References}
 %Reference
-\renewcommand\bibname{References} % Change heading to References
+\renewcommand\bibname{REFERENCES} % Change heading to References
 \bibliographystyle{IEEEtran} % to use IEEE Format for referencing
 \addcontentsline{toc}{chapter}{References} % to add references in TOC
 \bibliography{library} % specify the .bib file containing reference information 
