@@ -52,21 +52,21 @@
 
 \chapter*{Abstract} % The summary of your report
 \addcontentsline{toc}{chapter}{Abstract}%to include this chapter in TOC 
-Stock market prediction is when people try to figure out what the value of a stock will be in the future. They do this to make money by buying and selling stocks at the right time. Deep learning models are used to help predict stock prices. Recurrent neural networks are a type of deep learning model that is often used. There are different types of deep learning models that can be used depending on the situation. Predicting stock prices is difficult because there are many factors that can affect them. These factors can include things like politics, global economic conditions, and a company's financial performance. This project performs a comparative analysis of three deep learning models-the Long Short-term Memory (LSTM), Gated Recurrent Unit (GRU), and Vanilla RNN (VRNN)- in predicting the next day’s closing price of the Nepal Stock Exchange (NEPSE) index. The performances of employed models are compared using the standard assessment metrics-Root Mean Square Error (RMSE), Mean Absolute Percentage Error (MAPE), and Correlation Coefficient (R).
+Stock market prediction is when people try to figure out what the value of a stock will be in the future. They do this to make money by buying and selling stocks at the right time. Deep learning models are used to help predict stock prices. Recurrent neural networks are a type of deep learning model that is often used. There are different types of deep learning models that can be used depending on the situation. Predicting stock prices is difficult because there are many factors that can affect them. These factors can include things like politics, global economic conditions, and a company's financial performance. This project performs a comparative analysis of three deep learning models-the Long Short-term Memory (LSTM), Gated Recurrent Unit (GRU), and Vanilla RNN (VRNN)- in predicting the next day’s closing price of the Nepal Stock Exchange (NEPSE) index. The performances of employed models are compared using the standard assessment metric- Mean Absolute Percentage Error (MAPE).
 \par
 \textbf{\textit{Keywords$-$}} \emph{LSTM, GRU, VRNN, NEPSE, Deep learning}
 
-\chapter*{Acknowledgment}
-\addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
-We would like to express sincere gratitude to Department head Er. Rabindra Khati, Project Co-ordinator Er. Bishal Thapa and all the faculty members of Kantipur Engineering College for the continuous support during this project for their patience, motivation,enthusiasm, and immense knowledge. Their guidance helped us in all time of research, development and implementation of this project.   \par
+%\chapter*{Acknowledgment}
+%\addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
+%We would like to express sincere gratitude to Department head Er. Rabindra Khati, Project Co-ordinator Er. Bishal Thapa and all the faculty members of Kantipur Engineering College for the continuous support during this project for their patience, motivation,enthusiasm, and immense knowledge. Their guidance helped us in all time of research, development and implementation of this project.   \par
 %Finally we would like to thank our family and friends for all the support and encouragement.\par
 %to display members name under Acknowledgement
-\begin{flushright}
-\vskip -20pt
-\setstretch{1.2}
-\submittedBy
+%\begin{flushright}
+%\vskip -20pt
+%\setstretch{1.2}
+%\submittedBy
 
-\end{flushright}
+%\end{flushright}
 
 %to adjust spacings for TOC, LOF, LOT
 {
@@ -224,7 +224,7 @@ It is a website that uses artificial intelligence algorithm to produce its forec
  \vspace{-10pt}
 \subsection{Wallstreetzen Stock Forecast}
 \vspace{-18pt}
-WallStreetZen provides stock predictions and forecasts for the next 5 years. Their platform offers stock market forecasts for 2023, 2024, 2025, 2026, and 2027, along with analyst forecasts, price targets, buy/sell ratings, revenue/earnings forecasts, and more [1]. Additionally, WallStreetZen offers a stock screener for identifying high-growth stocks based on analyst projections for the next 3 years [2]. While it is important to note that stock market predictions and forecasts should be taken with caution, WallStreetZen provides a valuable tool for investors seeking insights into potential investment opportunities and market.
+WallStreetZen provides stock predictions and forecasts for the next 5 years. Their platform offers stock market forecasts for 2023, 2024, 2025, 2026, and 2027, along with analyst forecasts, price targets, buy/sell ratings, revenue/earnings forecasts, and more. Additionally, WallStreetZen offers a stock screener for identifying high-growth stocks based on analyst projections for the next 3 years . While it is important to note that stock market predictions and forecasts should be taken with caution, WallStreetZen provides a valuable tool for investors seeking insights into potential investment opportunities and market.
 \vspace{-10pt}
 \section{Related Works}
 \vspace{-18pt}
@@ -250,36 +250,22 @@ The data set contains financial data, macroeconomic data and technical indicator
 Macroeconomic data is a macroeconomic variable that affects stock market performance. Under the umbrella of macroeconomic factors, the representative features that affect stock price forecasts are remittances (RMT), inflation rate (IR), commercial bank interest rates (CBIR), treasury bills (TRB), consumer price index (CPI) and exchange rate (ER). Remittance is the money Nepalese workers send from abroad. Inflation is the rate of increase in prices over a given period of time.  The commercial bank interest rate is the bank rate at which Nepal Rastra Bank lends money to domestic financial institutions. The treasury bill is typically a promissory maturity note issued by a government as a primary instrument for regulating money supply and raising funds via open market operations. The Consumer Price Index is a measure of the average change overtime in the prices paid by urban consumers for a market basket of consumer goods and services. Exchange rate is the value of one country's currency against another country's currency.
  \par 
 Technical indicator includes Moving Average Convergence Divergence (MACD), Average True Range (ATR), Relative Strength Index (RSI), and Money Flow Index (MFI). MACD is calculated by subtracting the 26-day exponential moving average (EMA) from the 12-day EMA. ATR measures the market volatility and is defined as follows:\newpage
-\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
-\begin{center}
-	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=3in]{images/fmla1.jpg} 
-	\caption{ATR} %figure name
-	\label{ATR} % for referencing
-\end{center}
-\end{figure}
+\begin{eqnarray}
+True Range(TR) = max{(H-L)|H-C_p|,|L-C_p|}\\
+Average True Range(TR) = \frac{1}{n} \sum_{i}^{n}T R_i
+\end{eqnarray}
 where, H, L,$ C_p$ represent current high, current low, previous close prices and $T Ri, n$ represent a particular true range, the time period respectively.
 \par 
-The RSI is a momentum indicator that signals whether a security is overbought or oversold with current price levels, which is computed as follows:\par 
-\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
-\begin{center}
-	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=3in]{images/fmla2.jpg} 
-	\caption{RSI} %figure name
-	\label{RSI} % for referencing
-\end{center}
-\end{figure}
+The RSI is a momentum indicator that signals whether a security is overbought or oversold with current price levels, which is computed as follows:
+\begin{equation}
+RSI = 100 -\frac{100}{1 + \frac{Average Gain}{Average Loss}}
+\end{equation}
 where average gain and average loss are the average percentage gain and loss calculated over the certain look-back period.
 \par 
-The MFI communicates a possible reversal in time and provides a signal for further investment. Its calculation starts by finding the typical price (TP), the average of high, low, and close prices for each trading day. If the current TP is higher than the previous one, then positive money flow is calculated by multiplying the current TP with its volume. Similarly, a negative money flow is obtained if the current typical price is lower than the previous one. If the TP does not change, both positive and negative money flow will be zero. Summing all positive money flow indexes leads to positive money flow for a particular period. Negative money flow is calculated similarly. Mathematically, MFI is defined as:
-\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
-\begin{center}
-	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=3in]{images/fmla3.jpg} 
-	\caption{MFI} %figure name
-	\label{MFI} % for referencing
-\end{center}
-\end{figure}
+The MFI communicates a possible reversal in time and provides a signal for further investment. Its calculation starts by finding the typical price (TP), the average of high, low, and close prices for each trading day. If the current TP is higher than the previous one, then positive money flow is calculated by multiplying the current TP with its volume. Similarly, a negative money flow is obtained if the current typical price is lower than the previous one. If the TP does not change, both positive and negative money flow will be zero. Summing all positive money flow indexes leads to positive money flow for a particular period. Negative money flow is calculated similarly. Mathematically, MFI is defined as: 
+\begin{equation}
+MFI = 100 - \frac{100}{1 + Money Ratio}
+\end{equation}
 \subsection{Split the data set into train set and test set}
 \vspace{-18pt}
 The data set is divided in train set and test set so that the train set can be used for training the model.
@@ -291,13 +277,16 @@ Data preprocessing consists of three major steps: Data cleaning, Feature selecti
 The models used in this project for stock price prediction are: Vanilla RNN (VRNN), Long Shortterm Memory (LSTM), and Gated Recurrent Unit (GRU).
 \par 
 \subsubsection{Long Short term Memory (LSTM)}
+\vspace{-18pt}
 LSTM is a popular deep learning technique in RNN for time series prediction. While standard RNNs outperform traditional networks in preserving information, they are not very effective in learning long term dependencies due to the vanishing gradient problem. An LSTM is well-suited to classify and/or predict time-series data. There are several architectures of LSTM units. A common architecture is composed of a memory cell, an input gate, an output gate and a forget gate. The mathematical formulation of the LSTM cell is given below:
-\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
-\begin{center}
-	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=4in]{images/lstmform.jpg} 
-\end{center}
-\end{figure}
+\begin{eqnarray}
+f_t = \sigma(x_tW_f + H_{t-1}U_f)\\
+o_t = \sigma(x_tW_o + H_{t-1}U_o)\\
+S_t = \sigma(S_{t-1} *f_t + i_t * H^{'}_t)\\
+i_t = \sigma(x_tW_i + H_{t-1}U_i)\\
+H^{'}_t = tanh(x_tW_g + H_{t-1}U_g)\\
+H_t = tanh(S_t)*o_t
+\end{eqnarray}
 \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	%\includegraphics[width = 3in]{images/logo.png}
@@ -307,14 +296,13 @@ LSTM is a popular deep learning technique in RNN for time series prediction. Whi
 \end{center}
 \end{figure}
 \subsubsection{Vanilla RNN (VRNN)}
-It is the most basic form of a recurrent neural network. The simplest form of VRNN can be represented as in the figure given below. Normally, the tanh activation function is used in the hidden recurrent layer and the activation function for the output layer is selected according to the need of the problem to be solved. The operation of vanilla RNN can be expressed mathematically as below:\par
-\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
-\begin{center}
-	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=3in]{images/vform.jpg} 
-\end{center}
-\end{figure}
-where $X_t$ is input at time t, $H_t$ is state info at time t, $W_{xh},W_{hh}$ and $W_{xo}$ are weight matrices.
+\vspace{-18pt}
+It is the most basic form of a recurrent neural network. The simplest form of VRNN can be represented as in the figure given below. Normally, the tanh activation function is used in the hidden recurrent layer and the activation function for the output layer is selected according to the need of the problem to be solved. The operation of vanilla RNN can be expressed mathematically as below:
+\begin{eqnarray}
+H_t = f(W_{xh}X_t + W_{hh}H_{t-1})\\
+O_t = g(W_{xo}S_t)
+\end{eqnarray}
+where $X_t$ is input at time t, $H_t$ is state info at time t, $W_{xh},W_{hh}$ and $W_{xo}$ are weight matrices.\newpage
 \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	%\includegraphics[width = 3in]{images/logo.png}
@@ -324,16 +312,15 @@ where $X_t$ is input at time t, $H_t$ is state info at time t, $W_{xh},W_{hh}$ a
 \end{center}
 \end{figure}
 \subsubsection{Gated Recurrent Unit Network}
-GRU is also a type of RNN architecture and aims to solve the vanishing gradient problem. GRU is similar to the LSTM but simplified in structure. GRU uses two gates: update gate and reset gate. The update gate of GRU is equivalent to the forget gate and input gate of LSTM. GRU has fewer parameters and thus may train faster. GRU cell takes two different pieces of information: the current input sequence $x_t$ , the short-term memory from the previous cell $H_{t-1}$, at time t. The update gate carries the long-term dependencies in GRU. It determines the past information that needs to be passed into the next step. The reset gate takes the information from $x_t$ and $H_{t-1}$ and produces the output between 0 and 1 through the sigmoid layer and then it identifies which information to discard from the previous hidden state $H_{t-1}$. When the value is 1, it stores all the information in the cell while with a value of 0, it forgets all the information from the previous hidden state. Based on empirical evidence, LSTM and GRU have proven their effectiveness on many machine learning tasks. The operation of GRU network can be expressed as follows: \par 
-\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
-\begin{center}
-	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=4in]{images/gform.jpg} 
-	 %figure name
-	 % for referencing
-\end{center}
-\end{figure}
-where Z and R are update and reset gates and $H_t$ is hidden state.
+\vspace{-18pt}
+GRU is also a type of RNN architecture and aims to solve the vanishing gradient problem. GRU is similar to the LSTM but simplified in structure. GRU uses two gates: update gate and reset gate. The update gate of GRU is equivalent to the forget gate and input gate of LSTM. GRU has fewer parameters and thus may train faster. GRU cell takes two different pieces of information: the current input sequence $x_t$ , the short-term memory from the previous cell $H_{t-1}$, at time t. The update gate carries the long-term dependencies in GRU. It determines the past information that needs to be passed into the next step. The reset gate takes the information from $x_t$ and $H_{t-1}$ and produces the output between 0 and 1 through the sigmoid layer and then it identifies which information to discard from the previous hidden state $H_{t-1}$. When the value is 1, it stores all the information in the cell while with a value of 0, it forgets all the information from the previous hidden state. Based on empirical evidence, LSTM and GRU have proven their effectiveness on many machine learning tasks. The operation of GRU network can be expressed as follows: 
+\begin{eqnarray}
+Z_t = \sigma(W_zx_t + U_zH_{t-1})\\
+H^{'}_t = tanh(W_hx_t + (R_t * H_{t-1})U_h)\\
+R_t = \sigma(W_rx_t + U_rH_{t-1})\\
+H_t = (Z_t*H^{'}_t)+((1-Z_t)*H_{t-1})
+\end{eqnarray}
+where Z and R are update and reset gates, and $H^{'}_t$ and $H_t$ are candidate hidden state and hidden states.
 \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	%\includegraphics[width = 3in]{images/logo.png}
@@ -347,8 +334,10 @@ where Z and R are update and reset gates and $H_t$ is hidden state.
 Once the model is trained and evaluated, it can be used to make predictions on new, unseen data. This involves feeding the input features of the new data into the trained model, which then generates predictions for the corresponding stock prices.
 \subsection{Check for accuracy}
 \vspace{-18pt}
-Mean Absolute Percentage Error (MAPE) is a measure of prediction accuracy in statistics. It is calculated as the average of the unsigned percentage error, which is the absolute value of the difference between the actual value and the forecast value divided by the actual value, multiplied by 100. The formula for Mean Absolute Percentage Error is given as:\par 
-M = $\frac{1}{n} \sum_{t=1}^{n} | \frac{A_t - F_t}{A_t}|$
+Mean Absolute Percentage Error (MAPE) is a measure of prediction accuracy in statistics. It is calculated as the average of the unsigned percentage error, which is the absolute value of the difference between the actual value and the forecast value divided by the actual value, multiplied by 100. The formula for Mean Absolute Percentage Error is given as:
+\begin{equation}
+M = \frac{1}{n} \sum_{t=1}^{n} | \frac{A_t - F_t}{A_t}|
+\end{equation}
 \section{System Diagram}
 \vspace{-18pt}
 \subsection{Use case diagram}
