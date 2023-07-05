@@ -1,16 +1,13 @@
 \acswitchoff 
 \noaddvspace 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Gantt Chart\relax }}{4}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Gantt Chart\relax }}{4}{figure.caption.5}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Working mechanism of Stock Price Prediction System\relax }}{6}{figure.caption.7}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces ATR\relax }}{8}{figure.caption.8}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces RSI\relax }}{8}{figure.caption.9}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces MFI\relax }}{8}{figure.caption.10}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces LSTM\relax }}{10}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces VRNN\relax }}{11}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces GRU network\relax }}{12}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Use case Diagram of Stock Price Prediction System\relax }}{13}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Incremental Model\relax }}{14}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Working mechanism of Network Intrusion Detection System\relax }}{6}{figure.caption.6}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Features of NSL-KDD dataset\relax }}{7}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces LSTM\relax }}{9}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Confusion Matrix\relax }}{10}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Use case Diagram of Network Intrusion Detection System\relax }}{11}{figure.caption.10}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Incremental Model\relax }}{12}{figure.caption.11}%
 \addvspace {10\p@ }

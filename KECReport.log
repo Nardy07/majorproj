@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.3)  17 JUN 2023 18:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2023.1.3)  5 JUL 2023 10:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -521,7 +521,7 @@ nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
 or `english'. on input line 41.
-<images/logo.png, id=182, 102.3825pt x 102.3825pt>
+<images/logo.png, id=158, 102.3825pt x 102.3825pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
 Package pdftex.def Info: images/logo.png  used on input line 43.
@@ -535,243 +535,168 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.44 \KECtitlepage
-                   [1]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
-
+                   [1] (KECReport.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
 
 (C:\Users\dell\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
 
 (C:\Users\dell\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 [1
 
-] [2
-
-] (KECReport.toc [3
-
 ])
 \tf@toc=\write4
 \openout4 = `KECReport.toc'.
 
- [4] (KECReport.lof)
+ [2] (KECReport.lof)
 \tf@lof=\write5
 \openout5 = `KECReport.lof'.
 
- [5
+ [3
+
+] [4
 
 ]
 Chapter 1.
-
-LaTeX Warning: Citation `' on page 1 undefined on input line 109.
-
-
-LaTeX Warning: Citation `' on page 1 undefined on input line 111.
-
-
-LaTeX Warning: Citation `' on page 1 undefined on input line 113.
-
-
-Overfull \hbox (0.34398pt too wide) in paragraph at lines 113--114
-\OT1/ptm/m/n/12 prices, of-ten through vari-a-tions of Au-tore-gres-sive In-te-
-grated Mov-ing Av-er-age (ARIMA)
- []
-
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.119 \section{Objectives}
-                           [1
+l.130 \section{Problem Statement}
+                                  [1
 
-]
-Overfull \hbox (3.65497pt too wide) in paragraph at lines 126--127
-[]\OT1/ptm/m/n/12 Performing com-par-a-tive study of deep learn-ing mod-els (LS
-TM, GRU, and VRNN)
- []
-
+] [2]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-34.
+46.
+
 (C:\Users\dell\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-[2]
-Overfull \hbox (3.73866pt too wide) in paragraph at lines 182--184
+[3]
+Overfull \hbox (3.73866pt too wide) in paragraph at lines 193--195
 \OT1/ptm/m/n/12 The tech-ni-cal fea-si-bil-ity as-sess-ment is fo-cused on gain
 -ing in un-der-stand-ing of the present
  []
 
-[3]
-<images/gc2.png, id=299, 815.045pt x 350.30875pt>
-File: images/gc2.png Graphic file (type png)
-<use images/gc2.png>
-Package pdftex.def Info: images/gc2.png  used on input line 197.
-(pdftex.def)             Requested size: 433.62pt x 186.37367pt.
+<images/gc3.png, id=255, 1464.47125pt x 244.915pt>
+File: images/gc3.png Graphic file (type png)
+<use images/gc3.png>
+Package pdftex.def Info: images/gc3.png  used on input line 207.
+(pdftex.def)             Requested size: 433.62pt x 72.51836pt.
 
-Overfull \hbox (16.78711pt too wide) in paragraph at lines 197--198
+Overfull \hbox (16.78711pt too wide) in paragraph at lines 207--208
  [] 
  []
 
-[4 <./images/gc2.png>]
+[4 <./images/gc3.png>]
 Chapter 2.
-
-LaTeX Warning: Citation `kaushal2021house' on page 5 undefined on input line 21
-6.
-
-
-LaTeX Warning: Citation `manasa2020machine' on page 5 undefined on input line 2
-16.
-
 [5
 
 ]
 Chapter 3.
-<images/wm.jpg, id=308, 137.01187pt x 421.575pt>
-File: images/wm.jpg Graphic file (type jpg)
-<use images/wm.jpg>
-Package pdftex.def Info: images/wm.jpg  used on input line 226.
-(pdftex.def)             Requested size: 144.54pt x 444.7703pt.
+<images/wm2.jpg, id=265, 117.43875pt x 341.77687pt>
+File: images/wm2.jpg Graphic file (type jpg)
+<use images/wm2.jpg>
+Package pdftex.def Info: images/wm2.jpg  used on input line 235.
+(pdftex.def)             Requested size: 144.54pt x 420.64902pt.
 [6
 
- <./images/wm.jpg>] [7]
-<images/fmla1.jpg, id=318, 207.77625pt x 48.78226pt>
-File: images/fmla1.jpg Graphic file (type jpg)
-<use images/fmla1.jpg>
-Package pdftex.def Info: images/fmla1.jpg  used on input line 241.
-(pdftex.def)             Requested size: 216.81pt x 50.90501pt.
-<images/fmla2.jpg, id=319, 131.59163pt x 33.12375pt>
-File: images/fmla2.jpg Graphic file (type jpg)
-<use images/fmla2.jpg>
-Package pdftex.def Info: images/fmla2.jpg  used on input line 252.
-(pdftex.def)             Requested size: 216.81pt x 54.58003pt.
-<images/fmla3.jpg, id=320, 122.55788pt x 23.18663pt>
-File: images/fmla3.jpg Graphic file (type jpg)
-<use images/fmla3.jpg>
-Package pdftex.def Info: images/fmla3.jpg  used on input line 263.
-(pdftex.def)             Requested size: 216.81pt x 41.02156pt.
- [8 <./images/fmla1.jpg> <./images/fmla2.jpg> <./images/fmla3.jpg>]
-<images/lstmform.jpg, id=328, 237.88875pt x 46.67438pt>
-File: images/lstmform.jpg Graphic file (type jpg)
-<use images/lstmform.jpg>
-Package pdftex.def Info: images/lstmform.jpg  used on input line 283.
-(pdftex.def)             Requested size: 289.07999pt x 56.72113pt.
-<images/l1.png, id=329, 1007.765pt x 578.16pt>
+ <./images/wm2.jpg>]
+<images/ftr1.jpg, id=270, 316.7835pt x 296.60812pt>
+File: images/ftr1.jpg Graphic file (type jpg)
+<use images/ftr1.jpg>
+Package pdftex.def Info: images/ftr1.jpg  used on input line 246.
+(pdftex.def)             Requested size: 361.34999pt x 338.3359pt.
+
+Overfull \hbox (18.05452pt too wide) in paragraph at lines 253--254
+\OT1/ptm/m/n/12 There are 38 nu-meric fea-tures and 3 non-numeric fea-tures in 
+the NSL-KDD dataset.Because
+ []
+
+[7 <./images/ftr1.jpg>] [8]
+<images/l1.png, id=285, 1007.765pt x 578.16pt>
 File: images/l1.png Graphic file (type png)
 <use images/l1.png>
-Package pdftex.def Info: images/l1.png  used on input line 289.
+Package pdftex.def Info: images/l1.png  used on input line 277.
 (pdftex.def)             Requested size: 433.62pt x 248.77156pt.
 
-Overfull \hbox (16.78711pt too wide) in paragraph at lines 289--290
+Overfull \hbox (16.78711pt too wide) in paragraph at lines 277--278
  [] 
  []
 
-[9]
-<images/vform.jpg, id=334, 115.93312pt x 27.10126pt>
-File: images/vform.jpg Graphic file (type jpg)
-<use images/vform.jpg>
-Package pdftex.def Info: images/vform.jpg  used on input line 299.
-(pdftex.def)             Requested size: 216.81pt x 50.68733pt.
-<images/vrnn.jpg, id=335, 155.07938pt x 128.58037pt>
-File: images/vrnn.jpg Graphic file (type jpg)
-<use images/vrnn.jpg>
-Package pdftex.def Info: images/vrnn.jpg  used on input line 306.
-(pdftex.def)             Requested size: 289.07999pt x 239.70828pt.
- [10 <./images/lstmform.jpg> <./images/l1.png> <./images/vform.jpg>]
-<images/gform.jpg, id=342, 283.65974pt x 39.7485pt>
-File: images/gform.jpg Graphic file (type jpg)
-<use images/gform.jpg>
-Package pdftex.def Info: images/gform.jpg  used on input line 316.
-(pdftex.def)             Requested size: 289.07999pt x 40.50835pt.
-<images/gfig.png, id=343, 947.54pt x 423.5825pt>
-File: images/gfig.png Graphic file (type png)
-<use images/gfig.png>
-Package pdftex.def Info: images/gfig.png  used on input line 325.
-(pdftex.def)             Requested size: 361.34999pt x 161.5318pt.
+<images/cm1.jpg, id=286, 118.94438pt x 45.16875pt>
+File: images/cm1.jpg Graphic file (type jpg)
+<use images/cm1.jpg>
+Package pdftex.def Info: images/cm1.jpg  used on input line 288.
+(pdftex.def)             Requested size: 433.62pt x 164.67429pt.
 
-[11 <./images/vrnn.jpg>] [12 <./images/gform.jpg> <./images/gfig.png>]
-<images/ucd.jpg, id=358, 944.52875pt x 814.04124pt>
-File: images/ucd.jpg Graphic file (type jpg)
-<use images/ucd.jpg>
-Package pdftex.def Info: images/ucd.jpg  used on input line 343.
-(pdftex.def)             Requested size: 433.62pt x 373.71823pt.
-
-Overfull \hbox (16.78711pt too wide) in paragraph at lines 343--344
-[][] 
+Overfull \hbox (16.78711pt too wide) in paragraph at lines 288--289
+ [] 
  []
 
-<images/sdlc1.png, id=359, 790.955pt x 524.96124pt>
+[9 <./images/l1.png>]
+<images/ucd4.jpg, id=296, 415.5525pt x 389.0535pt>
+File: images/ucd4.jpg Graphic file (type jpg)
+<use images/ucd4.jpg>
+Package pdftex.def Info: images/ucd4.jpg  used on input line 314.
+(pdftex.def)             Requested size: 361.34999pt x 338.31946pt.
+ [10 <./images/cm1.jpg>] [11 <./images/ucd4.jpg>]
+<images/sdlc1.png, id=309, 790.955pt x 524.96124pt>
 File: images/sdlc1.png Graphic file (type png)
 <use images/sdlc1.png>
-Package pdftex.def Info: images/sdlc1.png  used on input line 353.
+Package pdftex.def Info: images/sdlc1.png  used on input line 325.
 (pdftex.def)             Requested size: 578.15999pt x 383.73117pt.
 
-Overfull \hbox (161.3271pt too wide) in paragraph at lines 353--354
+Overfull \hbox (161.3271pt too wide) in paragraph at lines 325--326
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--359
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
-[13 <./images/ucd.jpg>] [14 <./images/sdlc1.png>]
+[12 <./images/sdlc1.png>]
 Chapter 4.
-No file KECReport.bbl.
-[15
+(KECReport.bbl [13
+
+]) [14
 
 ] (KECReport.aux)
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-
-Package rerunfilecheck Warning: File `KECReport.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `KECReport.out':
-(rerunfilecheck)             Before: FBA35A7B47390732851D02BD78BC5492;6784
-(rerunfilecheck)             After:  0E4CD57E2E52A21780E1A79CEC008CA7;6590.
+Package rerunfilecheck Info: File `KECReport.out' has not changed.
+(rerunfilecheck)             Checksum: BB76AD3CE859ACE8F6798BE34ABE86F5;5682.
  ) 
 Here is how much of TeX's memory you used:
- 16336 strings out of 475385
- 306152 string characters out of 2777380
- 642399 words of memory out of 3000000
- 37419 multiletter control sequences out of 15000+600000
- 490202 words of font info for 68 fonts, out of 8000000 for 9000
+ 16287 strings out of 475385
+ 305391 string characters out of 2777380
+ 642520 words of memory out of 3000000
+ 37383 multiletter control sequences out of 15000+600000
+ 488570 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,7n,82p,1227b,593s stack positions out of 10000i,1000n,20000p,200000b,80000s
-
-pdfTeX warning (dest): name{subsection.2.1.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subsection.2.1.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-{C:/Users/dell/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Us
-ers/dell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pf
-b><C:/Users/dell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mmi12.pfb><C:/Users/dell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmmi6.pfb><C:/Users/dell/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmmi8.pfb><C:/Users/dell/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmr8.pfb><C:/Users/dell/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/dell/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/dell/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/dell/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/dell/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/dell/AppData/Local/Program
-s/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on KECReport.pdf (22 pages, 618575 bytes).
+ 79i,11n,82p,1148b,618s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/dell/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/
+Users/dell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.
+pfb><C:/Users/dell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb><C:/Users/dell/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmr12.pfb><C:/Users/dell/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb><C:/Users/dell/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><C:/Users/dell/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/dell/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/dell/AppData/Local/Prog
+rams/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/dell/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/dell/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on KECReport.pdf (20 pages, 828023 bytes).
 PDF statistics:
- 440 PDF objects out of 1000 (max. 8388607)
- 84 named destinations out of 1000 (max. 500000)
- 431 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 390 PDF objects out of 1000 (max. 8388607)
+ 77 named destinations out of 1000 (max. 500000)
+ 353 words of extra memory for PDF output out of 10000 (max. 10000000)
 

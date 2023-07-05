@@ -2,7 +2,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Define Macros for Details of your Project
 \newcommand{\project}{Major Project} %Specify "Major Project" or "Minor Project"
-\newcommand{\projectTitle}{Stock Price Prediction} %specify "Title" of Your Project
+\newcommand{\projectTitle}{Network Intrusion Detection System Using Deep Neural Network} %specify "Title" of Your Project
 \newcommand{\doc}{Proposal} % specify the document you are preparing eg. "Proposal", "Mid-Term Report" or "Final Report" 
 % Note that You have to sibmit "Final Report" for Pre-final defense as well.
 \newcommand{\subCode}{CT755} %specify Subject of Your Project
@@ -50,11 +50,11 @@
 %Approval Page is required for FINAL(Black Book Binded) REPORT of MAJOR PROJECT only. Comment this section for other Reports. 
 %\KECapproval % defined in KECReportFormat.tex
 
-\chapter*{Abstract} % The summary of your report
-\addcontentsline{toc}{chapter}{Abstract}%to include this chapter in TOC 
-Stock market prediction is when people try to figure out what the value of a stock will be in the future. They do this to make money by buying and selling stocks at the right time. Deep learning models are used to help predict stock prices. Recurrent neural networks are a type of deep learning model that is often used. There are different types of deep learning models that can be used depending on the situation. Predicting stock prices is difficult because there are many factors that can affect them. These factors can include things like politics, global economic conditions, and a company's financial performance. This project performs a comparative analysis of three deep learning models-the Long Short-term Memory (LSTM), Gated Recurrent Unit (GRU), and Vanilla RNN (VRNN)- in predicting the next day’s closing price of the Nepal Stock Exchange (NEPSE) index. The performances of employed models are compared using the standard assessment metric- Mean Absolute Percentage Error (MAPE).
-\par
-\textbf{\textit{Keywords$-$}} \emph{LSTM, GRU, VRNN, NEPSE, Deep learning}
+%\chapter*{Abstract} % The summary of your report
+%\addcontentsline{toc}{chapter}{Abstract}%to include this chapter in TOC 
+%Stock market prediction is when people try to figure out what the value of a stock will be in the future. They do this to make money by buying and selling stocks at the right time. Deep learning models are used to help predict stock prices. Recurrent neural networks are a type of deep learning model that is often used. There are different types of deep learning models that can be used depending on the situation. Predicting stock prices is difficult because there are many factors that can affect them. These factors can include things like politics, global economic conditions, and a company's financial performance. This project performs a comparative analysis of three deep learning models-the Long Short-term Memory (LSTM), Gated Recurrent Unit (GRU), and Vanilla RNN (VRNN)- in predicting the next day’s closing price of the Nepal Stock Exchange (NEPSE) index. The performances of employed models are compared using the standard assessment metric- Mean Absolute Percentage Error (MAPE).
+%\par
+%\textbf{\textit{Keywords$-$}} \emph{LSTM, GRU, VRNN, NEPSE, Deep learning}
 
 %\chapter*{Acknowledgment}
 %\addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
@@ -93,20 +93,20 @@ Stock market prediction is when people try to figure out what the value of a sto
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{List of Abbreviations}
-ATR:      Average Time Range\\
-CBIR:   Commercial Bank Interest Rate\\
-EMA:     Exponential Moving Average\\
-ER:        Exchange Rate\\
-GRU:    Gated Recurrent Unit\\
-IR:         Inflation Rate \\
-LSTM:  Long Short Term Memory\\
-MACD:  Moving Average Convergence Divergence\\
-MAPE:   Mean Absolute Percentage Error\\
-MFI:       Money Flow Index\\
-NEPSE:  Nepal Stock Exchange\\
-RSI:        Relative Strength Index\\
-TRB:      Treasury Bills\\
-VRNN: Vanilla Recurrent Neural Network\\
+\textbf{ATR}:      Average Time Range\\
+\textbf{CBIR}:   Commercial Bank Interest Rate\\
+\textbf{EMA}:     Exponential Moving Average\\
+\textbf{ER}:        Exchange Rate\\
+\textbf{GRU}:    Gated Recurrent Unit\\
+\textbf{IR}:         Inflation Rate \\
+\textbf{LSTM}:  Long Short Term Memory\\
+\textbf{MACD}:  Moving Average Convergence Divergence\\
+\textbf{MAPE}:   Mean Absolute Percentage Error\\
+\textbf{MFI}:       Money Flow Index\\
+\textbf{NEPSE}:  Nepal Stock Exchange\\
+\textbf{RSI}:        Relative Strength Index\\
+\textbf{TRB}:      Treasury Bills\\
+\textbf{VRNN}: Vanilla Recurrent Neural Network\\
 \addcontentsline{toc}{chapter}{List of Abbreviations}
 %comment this chapter if you don't have List of Abbreviations
 %\KECloa % defined in KECReportFormat
@@ -121,39 +121,35 @@ VRNN: Vanilla Recurrent Neural Network\\
 \vspace{-18pt}
 \section{Background}\label{sec:bkgrnd}%label your section if you require to refer them somewhere else in your document.
 \vspace{-18pt}
-The stock price is determined by the highest price a buyer is willing to pay or the lowest price a seller is willing to accept. Supply and demand are key factors that can affect stock prices. High demand can lead to an increase in stock price, while high supply can lead to a decrease. However, it is difficult to determine the exact factors that contribute to changes in demand and supply. Stock market prediction involves forecasting the future value of a stock. Financial analysts use two main schools of thought for analyzing and predicting stock markets: technical analysis and fundamental analysis. \cite{saud2020analysis}%subarna
-\par
- Machine learning models can learn a function by analyzing data without explicit programming. The performance of these algorithms depends on the representation of the data. However, stock market time-series data is difficult to map and is best described as a random walk, making feature engineering and prediction challenging. Therefore, deep learning models are the best available tool for stock market prediction.\cite{saud2019analysis}%purano
- \par
- There are two schools of thought in developing predictive models for estimating stock prices. Classical thinking uses historical facts and indicators to predict future stock prices, often through variations of Autoregressive Integrated Moving Average (ARIMA) models. However, these statistical models may not efficiently capture the noisy and nonlinear behavior of stock market data. Modern theory assumes that historical data cannot reflect the exact upcoming structure due to inherent non-linearity in stock market data. With the rapid advancement of artificial intelligence and machine learning techniques, availability of large-scale data, and increased computational capabilities, robust machine learning models can capture nonlinear behavior and predict stock prices.\cite{pokhrel2022predicting}%meetwala
-
+%nw3
+With the increasingly deep integration of the Internet and society, the Internet is changing the way in which people live, study and work, but the various security threats that we face are becoming more and more serious. How to identify various network attacks, especially unforeseen attacks, is an unavoidable key technical issue. An Intrusion Detection System (IDS), a significant research achievement in the information security field, can identify an invasion, which could be an ongoing invasion or an intrusion that has already occurred. In fact, intrusion detection is usually equivalent to a classification problem, such as a binary or a multiclass classification problem, i.e., identifying whether network traffic behavior is normal or anomalous, or a five-category classification problem, i.e., identifying whether it is normal or any one of the other four attack types: Denial of Service (DOS), User to Root (U2R), Probe (Probing) and Root to Local (R2L). In short, the main motivation of intrusion detection is to improve the accuracy of classifiers in effectively identifying the intrusive behavior.
+Machine learning methodologies have been widely used in identifying various types of attacks, and a machine learning approach can help the network administrator take the corresponding measures for preventing intrusions. However, most of the traditional machine learning methodologies belong to shallow learning and often emphasize feature engineering and selection; they cannot effectively solve the massive intrusion data classification problem that arises in the face of a real network application environment. With the dynamic growth of data sets, multiple classification tasks will lead to decreased accuracy. In addition, shallow learning is unsuited to intelligent analysis and the forecasting requirements of high-dimensional learning with massive data. In contrast, deep learners have the potential to extract better representations from the data to create much better models. As a result, intrusion detection technology has experienced rapid development after falling into a relatively slow period [1].%chinese
+A well-known method of securing the network is through implementing an intrusion detection system (IDS). IDS was originally implemented in 1980. The main aim of their work was to introduce a mechanism which differentiates between benign activities from malicious ones. Further research was carried out to optimizing this methodology to aid monitoring the network traffic in case of attacks, this system is now known as Network Intrusion Detection System (NIDS) . In NIDS, the detection system is inspecting the incoming and outgoing network traffic from all hosts in real time and based on certain criteria, it can detect and identify the attack, then, take the suitable security measures to stop or block it, which significantly reduces the risk of damage to the network. However, due to the rapid increase in the complexity of the cyber-security attacks, the current methods used in NIDS are failing to sufficiently address this issue[2].%udlt
+IDSs can be divided into two categories according to the main detection technology: misuse detection and anomaly detection. Misuse detection is a knowledge-based detection technology. A misuse detection system needs to clearly define the features of the intrusion, then identify the intrusion by matching the rules. Misuse detection can achieve a high accuracy and low false alarm rate. However, it needs to build a feature library and cannot detect unknown attacks. In contrast, anomaly detection is a behavior-based detection technology. First, it needs to define the normal activities of a network, and then check whether the actual behavior has deviated from the normal activities. Anomaly detection needs only to define a normal state of a specific network, without prior knowledge of intrusion. Thus, it can detect unknown attacks, although there may be a high false alarm rate. At present, network structure is becoming more and more complicated, and intrusion methods are following the trend of diversification and complication, creating more challenges for IDSs.
+The recurrent neural network (RNN) has failed to become a mainstream network model in the past few years due to difficulties in training and computational complexity. In recent years, with the development of deep learning theory, RNN began to enter a rapid development period. Currently, RNN has already been applied successfully to handwriting and speech recognition. The main feature of RNN is that it circulates information in a hidden layer which can remember information processed previously, leading to a structural advantage for the processing of time series information. Correspondingly, many intrusion behaviors can be abstracted as specific time series of events from the underlying network. So, RNN is considered suitable for building an IDS[3]%gru
 \section{Problem Statement}
 \vspace{-18pt}
-The stock market is a frequent topic in the media, with news outlets reporting on its daily fluctuations. Whenever the market experiences a new peak or dip, it garners significant attention. Developing an effective algorithm to forecast short-term stock prices could potentially boost investment rates and create more business prospects in the market.
+
 
 \section{Objectives}
 \vspace{-18pt}
-The primary objectives of this projects are as follows:
+The primary objective of this project:
 \vspace{-18pt}
 \begin{enumerate}[label=\roman*.]
-\item Gathering the multifaceted information of NEPSE index, putting them together into a common framework, and constructing a reliable model for accurate predictions.
-\item Conducting extensive data driven experimentation using customized parameters of LSTM, GRU, and VRNN models.
-\item Performing comparative study of deep learning models (LSTM, GRU, and VRNN) for the best fit and forecasting under the identical conditions.
-\item Conducting statistical experiment to validate and verify the reliability and robustness of the model.
+\item To develop a robust and accurate system that can effectively detect and notify network intrusions or malicious activities within a computer network.
 \end{enumerate}
 \section{Project Features}
 \vspace{-18pt}
 The project will be able to accomplish following:
 \vspace{-18pt}
 \begin{itemize}
-\item Reliable
-\item Accurate
-\item User friendly
-\item Efficient 
+\item Anomaly Detection
+\item Real-time Monitoring
+\item Traffic Preprocessing
 \end{itemize}
 \section{Application Scope}
 \vspace{-18pt}
-Stock price prediction has various applications such as investment decision-making, risk management, algorithmic trading, portfolio optimization, and economic forecasting. Predicting stock prices can help investors make informed decisions, manage risk, optimize portfolios, and provide insights into the economy. It is a valuable tool for investors, financial institutions, and economists seeking to make informed decisions and manage risk.
+Network Intrusion Detection System has various applications in areas such as Enterprise networks, Internet Service Providers(ISPs), Cloud Computing environment, Government networks and so on. The application scope of network intrusion detection systems using deep neural networks extends beyond these areas, as network security is crucial in nearly every sector that relies on secure and reliable communication. By deploying these systems, organizations can proactively detect and respond to network intrusions, minimize the impact of attacks, and protect their assets, data, and operations from potential threats.
 \section{System Requirement}
 \vspace{-18pt}
 \subsection{Development Requirements}
@@ -208,7 +204,7 @@ The purpose of the economic feasibility assessment is to determine the positive 
 \begin{figure}[!h] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=6in]{images/gc2.png} 
+	\includegraphics[width=6in]{images/gc3.png} 
 	\caption{Gantt Chart} %figure name
 	\label{figGanttChart} % for referencing
 \end{center}
@@ -217,63 +213,52 @@ The purpose of the economic feasibility assessment is to determine the positive 
 \vspace{-18pt}
 \section{Related Projects}
 \vspace{-18pt}
-\subsection{AI Stock Finder}
+\subsection{Suricata}
 \vspace{-18pt}
-It is a website that uses artificial intelligence algorithm to produce its forecasts based on 140 variables to yield high quality buy and sell signals. 
+Suricata is a high performance, open source network analysis and threat detection software used by most private and public organizations, and embedded by major vendors to protect their assets. It was developed by the Open Information Security Foundation (OSIF) and is a free tool used by enterprises, small and large. The system uses a rule set and signature language to detect and prevent threats. Suricata can run on Windows, Mac, Unix and Linux. As we know intrusion detection “detects” and “alerts” a threat. In contrast, an intrusion prevention system also takes action on the event and attempts to block the traffic. Suricata can do both and also does well with deep packet inspection, making it perfect for pretty much any kind of standard security monitoring initiatives for a company.
  \vspace{-10pt}
-\subsection{Wallstreetzen Stock Forecast}
+\subsection{Snort}
 \vspace{-18pt}
-WallStreetZen provides stock predictions and forecasts for the next 5 years. Their platform offers stock market forecasts for 2023, 2024, 2025, 2026, and 2027, along with analyst forecasts, price targets, buy/sell ratings, revenue/earnings forecasts, and more. Additionally, WallStreetZen offers a stock screener for identifying high-growth stocks based on analyst projections for the next 3 years . While it is important to note that stock market predictions and forecasts should be taken with caution, WallStreetZen provides a valuable tool for investors seeking insights into potential investment opportunities and market.
+Snort is the foremost Open Source Intrusion Prevention System (IPS) in the world. Snort IPS uses a series of rules that help define malicious network activity and uses those rules to find packets that match against them and generates alerts for users. Snort can be deployed inline to stop these packets, as well. Snort has three primary uses: As a packet sniffer like tcpdump, as a packet logger- which is useful for network traffic debugging, or it can be used as a full-blown network intrusion prevention system. Snort can be downloaded and configured for personal and business use alike.
 \vspace{-10pt}
 \section{Related Works}
 \vspace{-18pt}
-Arjun Singh Saud and Subarna Shakya researched in detail about stock price prediction using different deep learning models. In the paper “Analysis of look back period for stock price prediction with RNN variants: A case study on banking sector of NEPSE” published on 2020, there is comparison of the predictions by the deep learning models used in the study: LSTM, VRNN and GRU. \cite{saud2020analysis}  Arjun Singh Saud and Subarna Shakya again in their paper "Analysis of Gradient Descent Optimization Techniques With Gated Recurrent Unit For Stock Price Prediction: A Case study on Banking Sector of Nepal Stock Exchange", have compared stock price prediction performance of GRU with three widely used gradient descent optimization techniques: Momentum, RMSProp, and Adam.\cite{saud2019analysis}  Nawa Raj Pokhrel, Keshab Raj Dahal, Ramchandra Rimal, Hum Nath Bhandari, Rajendra K.C Khatri, Binod Rimal and William Edward Hahn on their paper " Predicting NEPSE price index using deep learning models", have performed comparative analysis between the deep learning models on the basis of assessment metrics like Root Mean Square Error, Mean Absolute Percentage Error and Correlation Coefficient. \cite{pokhrel2022predicting}
 \chapter{Methodology}
 \vspace{-18pt}
   \section{Working Mechanism}
   \vspace{-18pt}
-The development of stock price prediction system involves major steps which is 
+The development of Network Intrusion Detection System involves major steps which is 
 depicted in the diagram given below:
 \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=2in]{images/wm.jpg} 
-	\caption{Working mechanism of Stock Price Prediction System} %figure name
-	\label{Working mechanism of Stock Price Prediction System} % for referencing
+	\includegraphics[width=2in]{images/wm2.jpg} 
+	\caption{Working mechanism of Network Intrusion Detection System} %figure name
+	\label{Working mechanism of Network Intrusion Detection System} % for referencing
 \end{center}
 \end{figure}
-\subsection{Data set}
-\vspace{-18pt}
-The data set contains financial data, macroeconomic data and technical indicators. Fundamental data is significant or historical data that provides important information needed for stock trading. It has an opening price, closing price, high price, low price and volume. The opening price is the first trading price at the opening of the trading day and the closing price is the last trading price of the stock that day. Likewise, the high and low prices are the highest and lowest prices for that day. Volume refers to the number of products traded in a trading day and indicates traders' interest in the market.High volume means more satisfaction and repetition. All business history data is daily data entry from Share Sansar portal, is one of the popular products providing detailed information about Nepal stock market.
-\par
-Macroeconomic data is a macroeconomic variable that affects stock market performance. Under the umbrella of macroeconomic factors, the representative features that affect stock price forecasts are remittances (RMT), inflation rate (IR), commercial bank interest rates (CBIR), treasury bills (TRB), consumer price index (CPI) and exchange rate (ER). Remittance is the money Nepalese workers send from abroad. Inflation is the rate of increase in prices over a given period of time.  The commercial bank interest rate is the bank rate at which Nepal Rastra Bank lends money to domestic financial institutions. The treasury bill is typically a promissory maturity note issued by a government as a primary instrument for regulating money supply and raising funds via open market operations. The Consumer Price Index is a measure of the average change overtime in the prices paid by urban consumers for a market basket of consumer goods and services. Exchange rate is the value of one country's currency against another country's currency.
- \par 
-Technical indicator includes Moving Average Convergence Divergence (MACD), Average True Range (ATR), Relative Strength Index (RSI), and Money Flow Index (MFI). MACD is calculated by subtracting the 26-day exponential moving average (EMA) from the 12-day EMA. ATR measures the market volatility and is defined as follows:\newpage
-\begin{eqnarray}
-True Range(TR) = max{(H-L)|H-C_p|,|L-C_p|}\\
-Average True Range(TR) = \frac{1}{n} \sum_{i}^{n}T R_i
-\end{eqnarray}
-where, H, L,$ C_p$ represent current high, current low, previous close prices and $T Ri, n$ represent a particular true range, the time period respectively.
-\par 
-The RSI is a momentum indicator that signals whether a security is overbought or oversold with current price levels, which is computed as follows:
-\begin{equation}
-RSI = 100 -\frac{100}{1 + \frac{Average Gain}{Average Loss}}
-\end{equation}
-where average gain and average loss are the average percentage gain and loss calculated over the certain look-back period.
-\par 
-The MFI communicates a possible reversal in time and provides a signal for further investment. Its calculation starts by finding the typical price (TP), the average of high, low, and close prices for each trading day. If the current TP is higher than the previous one, then positive money flow is calculated by multiplying the current TP with its volume. Similarly, a negative money flow is obtained if the current typical price is lower than the previous one. If the TP does not change, both positive and negative money flow will be zero. Summing all positive money flow indexes leads to positive money flow for a particular period. Negative money flow is calculated similarly. Mathematically, MFI is defined as: 
-\begin{equation}
-MFI = 100 - \frac{100}{1 + Money Ratio}
-\end{equation}
-\subsection{Split the data set into train set and test set}
-\vspace{-18pt}
-The data set is divided in train set and test set so that the train set can be used for training the model.
+\newpage
+\subsection{Data set}The NSL-KDD dataset generated in 2009 is widely used in intrusion detection experiments. In the latest literature , all the researchers use the NSL-KDD as the benchmark dataset, which not only effectively solves
+the inherent redundant records problems of the KDD Cup 1999 dataset but also makes the number of records reasonable in the training set and testing set, in such a way that the classifier does not favour more frequent records. There are 41 features and 1 class label for every traffic record, and the features include basic features (No.1- No.10), content features (No.11 - No.22), and traffic features (No.23 - No.41). According to their characteristics, attacks in the dataset are categorized into four attack types: DoS (Denial of Service attacks), R2L (Root to Local attacks), U2R (User to Root attack), and Probe (Probing attacks). The testing set has some specific attack types that disappear in the training set, which allows it to provide a more realistic theoretical basis for intrusion detection.
+\begin{figure}[h] % tbh means top, bottom or here (priority: left to right)
+\begin{center}
+	%\includegraphics[width = 3in]{images/logo.png}
+	\includegraphics[width=5in]{images/ftr1.jpg} 
+	\caption{Features of NSL-KDD dataset} %figure name
+	\label{} % for referencing
+\end{center}
+\end{figure}
 \subsection{Data Preprocessing}
 \vspace{-18pt}
-Data preprocessing consists of three major steps: Data cleaning, Feature selection and Time series analysis. Data cleaning includes removing or handling missing values, outliers, and errors in the data. This may involve techniques like imputation, interpolation, or removing problematic data points. Identifying the relevant features or variables that may affect stock prices. This could include factors like historical prices, trading volumes, technical indicators (e.g., moving averages, RSI), fundamental data (e.g., earnings, revenue), or macroeconomic indicators (e.g., interest rates, GDP) comes under Feature selection and Time series analysis consists of Techniques such as identifying trends, seasonality, or auto correlation can be applied to analyze and preprocess the data as stock price data is often represented as a time series. 
-\subsection{Train the model}
+There are 38 numeric features and 3 non-numeric features in the NSL-KDD dataset.Because the input should be a numeric matrix, we must convert some non-numeric features, such as ‘protocol-type’, ‘service’ and ‘flag’ features, into numeric form using one hot encoding. For the efficient training of neural networks, input data should be transformed by performing some pre-processing known as data normalization. It is used where inputs are widely divergent. Without such a process, networks would take a long time to train. Different schemes can be used to normalise the input data before it is fed to the input layer of neural network. We have used Min-Max normalization to normalize the attributes of our dataset, because of the fact that it preserves relationships between features. Mathematically,
+\begin{equation}
+x_{i} = \frac{x_{i}- Min}{Max - Min}
+\end{equation}
+\subsection{Feature Selection}
+As mentioned before, the benchmark dataset contains 41 features and 1 output class attribute. After applying Information Gain, Gain Ratio and Correlation based feature reduction algorithms, it has been found that some of the features such as num file creations, num outbound cmds, dst host count, is host login, dst host rerror rate, su attempted and num access files do not play significant role in detection of malicious traffic from normal patterns. More over some other features in NSL-KDD datasets have been zeroed which can also reduce the performance of IDS.
+\subsection{Train and test the model}
 \vspace{-18pt}
-The models used in this project for stock price prediction are: Vanilla RNN (VRNN), Long Shortterm Memory (LSTM), and Gated Recurrent Unit (GRU).
+The model used in this project for NIDS is: Long Shortterm Memory (LSTM)
 \par 
 \subsubsection{Long Short term Memory (LSTM)}
 \vspace{-18pt}
@@ -294,48 +279,31 @@ H_t = tanh(S_t)*o_t
 	\label{LSTM} % for referencing
 \end{center}
 \end{figure}
-\subsubsection{Vanilla RNN (VRNN)}
+\subsection{Evaluation Metrics}
 \vspace{-18pt}
-It is the most basic form of a recurrent neural network. The simplest form of VRNN can be represented as in the figure given below. Normally, the tanh activation function is used in the hidden recurrent layer and the activation function for the output layer is selected according to the need of the problem to be solved. The operation of vanilla RNN can be expressed mathematically as below:
-\begin{eqnarray}
-H_t = f(W_{xh}X_t + W_{hh}H_{t-1})\\
-O_t = g(W_{xo}S_t)
-\end{eqnarray}
-where $X_t$ is input at time t, $H_t$ is state info at time t, $W_{xh},W_{hh}$ and $W_{xo}$ are weight matrices.\newpage
+The most important performance indicator (Accuracy, AC) of intrusion detection is used to measure the performance of the model. In addition to the accuracy, we introduce the detection rate and false positive rate. The True Positive (TP) is equivalent to those correctly rejected, and it denotes the number of anomaly records that are identified as anomaly. The False Positive (FP) is the equivalent of incorrectly rejected, and it denotes the number of normal records that are identified as anomaly. The True Negative (TN) is equivalent to those correctly admitted, and it denotes the number of normal records that are identified as normal. The False Negative (FN) is equivalent to those incorrectly admitted, and it denotes the number of anomaly records that are identified as normal.
 \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=4in]{images/vrnn.jpg} 
-	\caption{VRNN} %figure name
-	\label{VRNN} % for referencing
+	\includegraphics[width=6in]{images/cm1.jpg} 
+	\caption{Confusion Matrix} %figure name
+	\label{Confusion Matrix} % for referencing
 \end{center}
 \end{figure}
-\subsubsection{Gated Recurrent Unit Network}
-\vspace{-18pt}
-GRU is also a type of RNN architecture and aims to solve the vanishing gradient problem. GRU is similar to the LSTM but simplified in structure. GRU uses two gates: update gate and reset gate. The update gate of GRU is equivalent to the forget gate and input gate of LSTM. GRU has fewer parameters and thus may train faster. GRU cell takes two different pieces of information: the current input sequence $x_t$ , the short-term memory from the previous cell $H_{t-1}$, at time t. The update gate carries the long-term dependencies in GRU. It determines the past information that needs to be passed into the next step. The reset gate takes the information from $x_t$ and $H_{t-1}$ and produces the output between 0 and 1 through the sigmoid layer and then it identifies which information to discard from the previous hidden state $H_{t-1}$. When the value is 1, it stores all the information in the cell while with a value of 0, it forgets all the information from the previous hidden state. Based on empirical evidence, LSTM and GRU have proven their effectiveness on many machine learning tasks. The operation of GRU network can be expressed as follows: 
-\begin{eqnarray}
-Z_t = \sigma(W_zx_t + U_zH_{t-1})\\
-H^{'}_t = tanh(W_hx_t + (R_t * H_{t-1})U_h)\\
-R_t = \sigma(W_rx_t + U_rH_{t-1})\\
-H_t = (Z_t*H^{'}_t)+((1-Z_t)*H_{t-1})
-\end{eqnarray}
-where Z and R are update and reset gates, and $H^{'}_t$ and $H_t$ are candidate hidden state and hidden states.
-\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
-\begin{center}
-	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=5in]{images/gfig.png} 
-	\caption{GRU network} %figure name
-	\label{GRU network} % for referencing
-\end{center}
-\end{figure}
-\subsection{Predict the stock price}
-\vspace{-18pt}
-Once the model is trained and evaluated, it can be used to make predictions on new, unseen data. This involves feeding the input features of the new data into the trained model, which then generates predictions for the corresponding stock prices.
-\subsection{Check for accuracy}
-\vspace{-18pt}
-Mean Absolute Percentage Error (MAPE) is a measure of prediction accuracy in statistics. It is calculated as the average of the unsigned percentage error, which is the absolute value of the difference between the actual value and the forecast value divided by the actual value, multiplied by 100. The formula for Mean Absolute Percentage Error is given as:
 \begin{equation}
-M = \frac{1}{n} \sum_{t=1}^{n} | \frac{A_t - F_t}{A_t}|
+Accuracy = \frac{TP + TN}{TP + TN + FP + FN}
+\end{equation} 
+Precision is the number of actual attacks as a proportion of the number classified as attacks.
+\begin{equation}
+Precision = \frac{TP}{TP + FP} 
+\end{equation}
+True Positive Rate shows the percentage of the number of records identified correctly over the total number of anomaly records.
+\begin{equation}
+True Positive Rate = \frac{TP}{FN + TP}
+\end{equation}
+False Positive Rate is the percentage of the number of records rejected incorrectly is divided by the total number of normal records.
+\begin{equation}
+False Positive Rate = \frac{FP}{FP + TN}
 \end{equation}
 \section{System Diagram}
 \vspace{-18pt}
@@ -343,9 +311,9 @@ M = \frac{1}{n} \sum_{t=1}^{n} | \frac{A_t - F_t}{A_t}|
 \begin{figure}[h]
 \begin{center}
 	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=5in]{images/ucd.jpg} 
-	\caption{Use case Diagram of Stock Price Prediction System} %figure name
-	\label{Use case Diagram of Stock Price Prediction System} % for referencing
+	\includegraphics[width=5in]{images/ucd4.jpg} 
+	\caption{Use case Diagram of Network Intrusion Detection System} %figure name
+	\label{Use case Diagram of Network Intrusion Detection System} % for referencing
 \end{center}
 \end{figure}
 \newpage
@@ -359,13 +327,12 @@ M = \frac{1}{n} \sum_{t=1}^{n} | \frac{A_t - F_t}{A_t}|
 	\label{Incremental Model} % for referencing
 \end{center}
 \end{figure}
- Incremental model is a method of software engineering that combines the elements of waterfall model in iterative manner. It involves both development and maintenance. In this model requirements are broken down into multiple modules. Incremental development is done in steps from analysis design, implementation, testing/verification, maintenance. Each iteration passes through the requirements, design, coding and testing phases. The first increment is often a core product where the necessary requirements are addressed, and the extra features are added in the next increments. The core product is delivered to the client. Once the core product is analyzed by the client, there is plan development for the next increment.\\
+Incremental model is a method of software engineering that combines the elements of waterfall model in iterative manner. It involves both development and maintenance. In this model requirements are broken down into multiple modules. Incremental development is done in steps from analysis design, implementation, testing/verification, maintenance. Each iteration passes through the requirements, design, coding and testing phases. The first increment is often a core product where the necessary requirements are addressed, and the extra features are added in the next increments. The core product is delivered to the client. Once the core product is analyzed by the client, there is plan development for the next increment.\\
 \chapter{Epilogue}
 \vspace{-18pt}
 \section{Expected Output}
 \vspace{-18pt}
-Upon the completion of the project, the system will be able to predict the price of the stock the user selects.
-
+Upon the completion of the project, the system will be able to detect and notify anomalies in the network.
 %Reference
 \renewcommand\bibname{REFERENCES} % Change heading to References
 \bibliographystyle{IEEEtran} % to use IEEE Format for referencing
