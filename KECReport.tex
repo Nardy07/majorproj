@@ -2,7 +2,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Define Macros for Details of your Project
 \newcommand{\project}{Major Project} %Specify "Major Project" or "Minor Project"
-\newcommand{\projectTitle}{Network Intrusion Detection System Using Deep Neural Network} %specify "Title" of Your Project
+\newcommand{\projectTitle}{Network Intrusion Detection System Using LSTM} %specify "Title" of Your Project
 \newcommand{\doc}{Proposal} % specify the document you are preparing eg. "Proposal", "Mid-Term Report" or "Final Report" 
 % Note that You have to sibmit "Final Report" for Pre-final defense as well.
 \newcommand{\subCode}{CT755} %specify Subject of Your Project
@@ -93,20 +93,15 @@
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter*{List of Abbreviations}
-\textbf{ATR}:      Average Time Range\\
-\textbf{CBIR}:   Commercial Bank Interest Rate\\
-\textbf{EMA}:     Exponential Moving Average\\
-\textbf{ER}:        Exchange Rate\\
-\textbf{GRU}:    Gated Recurrent Unit\\
-\textbf{IR}:         Inflation Rate \\
-\textbf{LSTM}:  Long Short Term Memory\\
-\textbf{MACD}:  Moving Average Convergence Divergence\\
-\textbf{MAPE}:   Mean Absolute Percentage Error\\
-\textbf{MFI}:       Money Flow Index\\
-\textbf{NEPSE}:  Nepal Stock Exchange\\
-\textbf{RSI}:        Relative Strength Index\\
-\textbf{TRB}:      Treasury Bills\\
-\textbf{VRNN}: Vanilla Recurrent Neural Network\\
+\textbf{DOS}: Denial of Service\\
+\textbf{FN}: False  Negative \\
+\textbf{FP}: False Positive\\
+\textbf{IDS}: Intrusion Detection System\\
+\textbf{LSTM}: Long Short Term Memory\\
+\textbf{R2L}: Root to Local \\
+\textbf{TN}: True Negative\\
+\textbf{TP}: True Positive\\
+\textbf{U2R}: User to Root\\
 \addcontentsline{toc}{chapter}{List of Abbreviations}
 %comment this chapter if you don't have List of Abbreviations
 %\KECloa % defined in KECReportFormat
@@ -122,15 +117,17 @@
 \section{Background}\label{sec:bkgrnd}%label your section if you require to refer them somewhere else in your document.
 \vspace{-18pt}
 %nw3
-With the increasingly deep integration of the Internet and society, the Internet is changing the way in which people live, study and work, but the various security threats that we face are becoming more and more serious. How to identify various network attacks, especially unforeseen attacks, is an unavoidable key technical issue. An Intrusion Detection System (IDS), a significant research achievement in the information security field, can identify an invasion, which could be an ongoing invasion or an intrusion that has already occurred. In fact, intrusion detection is usually equivalent to a classification problem, such as a binary or a multiclass classification problem, i.e., identifying whether network traffic behavior is normal or anomalous, or a five-category classification problem, i.e., identifying whether it is normal or any one of the other four attack types: Denial of Service (DOS), User to Root (U2R), Probe (Probing) and Root to Local (R2L). In short, the main motivation of intrusion detection is to improve the accuracy of classifiers in effectively identifying the intrusive behavior.
-Machine learning methodologies have been widely used in identifying various types of attacks, and a machine learning approach can help the network administrator take the corresponding measures for preventing intrusions. However, most of the traditional machine learning methodologies belong to shallow learning and often emphasize feature engineering and selection; they cannot effectively solve the massive intrusion data classification problem that arises in the face of a real network application environment. With the dynamic growth of data sets, multiple classification tasks will lead to decreased accuracy. In addition, shallow learning is unsuited to intelligent analysis and the forecasting requirements of high-dimensional learning with massive data. In contrast, deep learners have the potential to extract better representations from the data to create much better models. As a result, intrusion detection technology has experienced rapid development after falling into a relatively slow period [1].%chinese
-A well-known method of securing the network is through implementing an intrusion detection system (IDS). IDS was originally implemented in 1980. The main aim of their work was to introduce a mechanism which differentiates between benign activities from malicious ones. Further research was carried out to optimizing this methodology to aid monitoring the network traffic in case of attacks, this system is now known as Network Intrusion Detection System (NIDS) . In NIDS, the detection system is inspecting the incoming and outgoing network traffic from all hosts in real time and based on certain criteria, it can detect and identify the attack, then, take the suitable security measures to stop or block it, which significantly reduces the risk of damage to the network. However, due to the rapid increase in the complexity of the cyber-security attacks, the current methods used in NIDS are failing to sufficiently address this issue[2].%udlt
-IDSs can be divided into two categories according to the main detection technology: misuse detection and anomaly detection. Misuse detection is a knowledge-based detection technology. A misuse detection system needs to clearly define the features of the intrusion, then identify the intrusion by matching the rules. Misuse detection can achieve a high accuracy and low false alarm rate. However, it needs to build a feature library and cannot detect unknown attacks. In contrast, anomaly detection is a behavior-based detection technology. First, it needs to define the normal activities of a network, and then check whether the actual behavior has deviated from the normal activities. Anomaly detection needs only to define a normal state of a specific network, without prior knowledge of intrusion. Thus, it can detect unknown attacks, although there may be a high false alarm rate. At present, network structure is becoming more and more complicated, and intrusion methods are following the trend of diversification and complication, creating more challenges for IDSs.
-The recurrent neural network (RNN) has failed to become a mainstream network model in the past few years due to difficulties in training and computational complexity. In recent years, with the development of deep learning theory, RNN began to enter a rapid development period. Currently, RNN has already been applied successfully to handwriting and speech recognition. The main feature of RNN is that it circulates information in a hidden layer which can remember information processed previously, leading to a structural advantage for the processing of time series information. Correspondingly, many intrusion behaviors can be abstracted as specific time series of events from the underlying network. So, RNN is considered suitable for building an IDS[3]%gru
+With the increasingly deep integration of the Internet and society, the Internet is changing the way in which people live, study and work, but the various security threats that we face are becoming more and more serious. How to identify various network attacks, especially unforeseen attacks, is an unavoidable key technical issue. An Intrusion Detection System (IDS), a significant research achievement in the information security field, can identify an invasion, which could be an ongoing invasion or an intrusion that has already occurred. In fact, intrusion detection is usually equivalent to a classification problem, such as a binary or a multiclass classification problem, i.e., identifying whether network traffic behavior is normal or anomalous, or a five-category classification problem, i.e., identifying whether it is normal or any one of the other four attack types: Denial of Service (DOS), User to Root (U2R), Probe (Probing) and Root to Local (R2L). In short, the main motivation of intrusion detection is to improve the accuracy of classifiers in effectively identifying the intrusive behavior.\par
+Machine learning methodologies have been widely used in identifying various types of attacks, and a machine learning approach can help the network administrator take the corresponding measures for preventing intrusions. However, most of the traditional machine learning methodologies belong to shallow learning and often emphasize feature engineering and selection; they cannot effectively solve the massive intrusion data classification problem that arises in the face of a real network application environment. With the dynamic growth of data sets, multiple classification tasks will lead to decreased accuracy. In addition, shallow learning is unsuited to intelligent analysis and the forecasting requirements of high-dimensional learning with massive data. In contrast, deep learners have the potential to extract better representations from the data to create much better models. As a result, intrusion detection technology has experienced rapid development after falling into a relatively slow period.\cite{yin2017deep}%chinese
+\par
+A well-known method of securing the network is through implementing an intrusion detection system (IDS). IDS was originally implemented in 1980. The main aim of their work was to introduce a mechanism which differentiates between benign activities from malicious ones. Further research was carried out to optimizing this methodology to aid monitoring the network traffic in case of attacks, this system is now known as Network Intrusion Detection System (NIDS) . In NIDS, the detection system is inspecting the incoming and outgoing network traffic from all hosts in real time and based on certain criteria, it can detect and identify the attack, then, take the suitable security measures to stop or block it, which significantly reduces the risk of damage to the network. However, due to the rapid increase in the complexity of the cyber-security attacks, the current methods used in NIDS are failing to sufficiently address this issue[2].\cite{al2020using}
+\par 
+IDSs can be divided into two categories according to the main detection technology: misuse detection and anomaly detection. Misuse detection is a knowledge-based detection technology. A misuse detection system needs to clearly define the features of the intrusion, then identify the intrusion by matching the rules. Misuse detection can achieve a high accuracy and low false alarm rate. However, it needs to build a feature library and cannot detect unknown attacks. In contrast, anomaly detection is a behavior-based detection technology. First, it needs to define the normal activities of a network, and then check whether the actual behavior has deviated from the normal activities. Anomaly detection needs only to define a normal state of a specific network, without prior knowledge of intrusion. Thus, it can detect unknown attacks, although there may be a high false alarm rate. At present, network structure is becoming more and more complicated, and intrusion methods are following the trend of diversification and complication, creating more challenges for IDSs.\par 
+The recurrent neural network (RNN) has failed to become a mainstream network model in the past few years due to difficulties in training and computational complexity. In recent years, with the development of deep learning theory, RNN began to enter a rapid development period. Currently, RNN has already been applied successfully to handwriting and speech recognition. The main feature of RNN is that it circulates information in a hidden layer which can remember information processed previously, leading to a structural advantage for the processing of time series information. Correspondingly, many intrusion behaviors can be abstracted as specific time series of events from the underlying network. So, RNN is considered suitable for building an IDS.\cite{xu2018intrusion}
+\par 
 \section{Problem Statement}
 \vspace{-18pt}
-
-
+The existing Network Intrusion Detection Systems face challenges in accurately and efficiently detecting and preventing network intrusions, thereby compromising the overall security of computer networks. These challenges include high false-positive rates, limited scalability, inability to detect novel or sophisticated attacks, and the difficulty in distinguishing between legitimate and malicious network traffic. Addressing these issues is crucial to enhance the performance and reliability of NIDS, enabling proactive identification and prevention of network intrusions while minimizing false alarms.
 \section{Objectives}
 \vspace{-18pt}
 The primary objective of this project:
@@ -223,6 +220,11 @@ Snort is the foremost Open Source Intrusion Prevention System (IPS) in the world
 \vspace{-10pt}
 \section{Related Works}
 \vspace{-18pt}
+In the paper "A Deep Learning Approach for Intrusion Detection Using Recurrent Neural Networks" a deep learning approach for intrusion detection system using recurrent neural networks(RNN-IDS) was proposed and the performance of the model was compared with traditional machine learning classification methods in both binary and multiclass classification. The study found that the proposed model improved the accuracy of the intrusion detection and provided a new research method.\cite{yin2017deep}
+\par 
+In "Using Deep Learning Techniques for Network Intrusion Detection", Convolutional Neural Networks and Recurrent Neural Networks were used to design an intelligent detection system that was able to detect different network intrusions and the performance of this model was evaluated using various evaluation metrices to find the best model for the intrusion detection system. Among the tested learning techniques, CNN was found to have outperformed the other techniques with accuracy, F1 score,recall and precision.\cite{al2020using}
+\par 
+In the paper "An Intrusion Detection System Using a Deep Neural Network With Gated Recurrent Units", deep learning theory was applied to intrusion detection system and a model was developed that had automatic feature extraction. In this paper, the characteristics of the time-related intrusion was considered and a novel IDS that consisted of a recurrent neural network with gated recurrent units (GRU), multilayer perceptron (MLP), and softmax module was proposed. Experiments on the datasets used showed that the proposed system had leading performance. Comparative experiments showed that the GRU is more suitable as a memory unit for IDS than LSTM, and proved that it is an effective simplification and improvement of LSTM. Moreover, the bidirectional GRU can reach the best performance compared with the other methods.\cite{xu2018intrusion}
 \chapter{Methodology}
 \vspace{-18pt}
   \section{Working Mechanism}
@@ -334,7 +336,7 @@ Incremental model is a method of software engineering that combines the elements
 \vspace{-18pt}
 Upon the completion of the project, the system will be able to detect and notify anomalies in the network.
 %Reference
-\renewcommand\bibname{REFERENCES} % Change heading to References
+\renewcommand\bibname{References} % Change heading to References
 \bibliographystyle{IEEEtran} % to use IEEE Format for referencing
 \addcontentsline{toc}{chapter}{References} % to add references in TOC
 \bibliography{library} % specify the .bib file containing reference information 
