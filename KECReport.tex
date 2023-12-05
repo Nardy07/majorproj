@@ -19,8 +19,8 @@
 \newcommand{\submittedTo}{Department of Computer and Electronics Engineering} %specify your department
 \newcommand{\hod}{Er. Rabindra Khati} %specify Head ot the department
 \newcommand{\defYear}{2023} %Defense Year
-\newcommand{\defMonth}{June} %Defense Month- January, February, ...
-\newcommand{\defDay}{18} %specify Defense Day- 1, 2, ...
+\newcommand{\defMonth}{August} %Defense Month- January, February, ...
+\newcommand{\defDay}{24} %specify Defense Day- 1, 2, ...
 
 \newif\ifhassupervisor
 \hassupervisorfalse % to display supervisor name use command- \hassupervisortrue
@@ -120,7 +120,7 @@
 With the increasingly deep integration of the Internet and society, the Internet is changing the way in which people live, study and work, but the various security threats that we face are becoming more and more serious. How to identify various network attacks, especially unforeseen attacks, is an unavoidable key technical issue. An Intrusion Detection System (IDS), a significant research achievement in the information security field, can identify an invasion, which could be an ongoing invasion or an intrusion that has already occurred. In fact, intrusion detection is usually equivalent to a classification problem, such as a binary or a multiclass classification problem, i.e., identifying whether network traffic behavior is normal or anomalous, or a five-category classification problem, i.e., identifying whether it is normal or any one of the other four attack types: Denial of Service (DOS), User to Root (U2R), Probe (Probing) and Root to Local (R2L). In short, the main motivation of intrusion detection is to improve the accuracy of classifiers in effectively identifying the intrusive behavior.\par
 Machine learning methodologies have been widely used in identifying various types of attacks, and a machine learning approach can help the network administrator take the corresponding measures for preventing intrusions. However, most of the traditional machine learning methodologies belong to shallow learning and often emphasize feature engineering and selection; they cannot effectively solve the massive intrusion data classification problem that arises in the face of a real network application environment. With the dynamic growth of data sets, multiple classification tasks will lead to decreased accuracy. In addition, shallow learning is unsuited to intelligent analysis and the forecasting requirements of high-dimensional learning with massive data. In contrast, deep learners have the potential to extract better representations from the data to create much better models. As a result, intrusion detection technology has experienced rapid development after falling into a relatively slow period.\cite{yin2017deep}%chinese
 \par
-A well-known method of securing the network is through implementing an intrusion detection system (IDS). IDS was originally implemented in 1980. The main aim of their work was to introduce a mechanism which differentiates between benign activities from malicious ones. Further research was carried out to optimizing this methodology to aid monitoring the network traffic in case of attacks, this system is now known as Network Intrusion Detection System (NIDS) . In NIDS, the detection system is inspecting the incoming and outgoing network traffic from all hosts in real time and based on certain criteria, it can detect and identify the attack, then, take the suitable security measures to stop or block it, which significantly reduces the risk of damage to the network. However, due to the rapid increase in the complexity of the cyber-security attacks, the current methods used in NIDS are failing to sufficiently address this issue[2].\cite{al2020using}
+A well-known method of securing the network is through implementing an Intrusion Detection System (IDS). IDS was originally implemented in 1980. The main aim of their work was to introduce a mechanism which differentiates between benign activities from malicious ones. Further research was carried out to optimizing this methodology to aid monitoring the network traffic in case of attacks, this system is now known as Network Intrusion Detection System (NIDS) . In NIDS, the detection system is inspecting the incoming and outgoing network traffic from all hosts in real time and based on certain criteria, it can detect and identify the attack, then, take the suitable security measures to stop or block it, which significantly reduces the risk of damage to the network. However, due to the rapid increase in the complexity of the cyber-security attacks, the current methods used in NIDS are failing to sufficiently address this issue.\cite{al2020using}
 \par 
 IDSs can be divided into two categories according to the main detection technology: misuse detection and anomaly detection. Misuse detection is a knowledge-based detection technology. A misuse detection system needs to clearly define the features of the intrusion, then identify the intrusion by matching the rules. Misuse detection can achieve a high accuracy and low false alarm rate. However, it needs to build a feature library and cannot detect unknown attacks. In contrast, anomaly detection is a behavior-based detection technology. First, it needs to define the normal activities of a network, and then check whether the actual behavior has deviated from the normal activities. Anomaly detection needs only to define a normal state of a specific network, without prior knowledge of intrusion. Thus, it can detect unknown attacks, although there may be a high false alarm rate. At present, network structure is becoming more and more complicated, and intrusion methods are following the trend of diversification and complication, creating more challenges for IDSs.\par 
 The recurrent neural network (RNN) has failed to become a mainstream network model in the past few years due to difficulties in training and computational complexity. In recent years, with the development of deep learning theory, RNN began to enter a rapid development period. Currently, RNN has already been applied successfully to handwriting and speech recognition. The main feature of RNN is that it circulates information in a hidden layer which can remember information processed previously, leading to a structural advantage for the processing of time series information. Correspondingly, many intrusion behaviors can be abstracted as specific time series of events from the underlying network. So, RNN is considered suitable for building an IDS.\cite{xu2018intrusion}
@@ -155,7 +155,7 @@ Network Intrusion Detection System has various applications in areas such as Ent
 \vspace{-10pt}
 \begin{itemize}
 \item Windows/Linux/Mac
-\item HTML/CSS/JS
+\item Mininet, RYU controller
 \item Jupyter Notebook
 \item Python IDE
 \end{itemize}
@@ -201,7 +201,7 @@ The purpose of the economic feasibility assessment is to determine the positive 
 \begin{figure}[!h] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=6in]{images/gc3.png} 
+	\includegraphics[width=5.5in]{images/mj.jpg} 
 	\caption{Gantt Chart} %figure name
 	\label{figGanttChart} % for referencing
 \end{center}
@@ -234,13 +234,15 @@ depicted in the diagram given below:
 \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=2in]{images/wm2.jpg} 
+	\includegraphics[width=2in]{images/ww1.jpg} 
 	\caption{Working mechanism of Network Intrusion Detection System} %figure name
 	\label{Working mechanism of Network Intrusion Detection System} % for referencing
 \end{center}
 \end{figure}
 \newpage
-\subsection{Data set}The NSL-KDD dataset generated in 2009 is widely used in intrusion detection experiments. In the latest literature , all the researchers use the NSL-KDD as the benchmark dataset, which not only effectively solves
+\subsection{Data set}
+\vspace{-18pt}
+The NSL-KDD dataset generated in 2009 is widely used in intrusion detection experiments. In the latest literature , all the researchers use the NSL-KDD as the benchmark dataset, which not only effectively solves
 the inherent redundant records problems of the KDD Cup 1999 dataset but also makes the number of records reasonable in the training set and testing set, in such a way that the classifier does not favour more frequent records. There are 41 features and 1 class label for every traffic record, and the features include basic features (No.1- No.10), content features (No.11 - No.22), and traffic features (No.23 - No.41). According to their characteristics, attacks in the dataset are categorized into four attack types: DoS (Denial of Service attacks), R2L (Root to Local attacks), U2R (User to Root attack), and Probe (Probing attacks). The testing set has some specific attack types that disappear in the training set, which allows it to provide a more realistic theoretical basis for intrusion detection.
 \begin{figure}[h] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
@@ -252,15 +254,35 @@ the inherent redundant records problems of the KDD Cup 1999 dataset but also mak
 \end{figure}
 \subsection{Data Preprocessing}
 \vspace{-18pt}
-There are 38 numeric features and 3 non-numeric features in the NSL-KDD dataset.Because the input should be a numeric matrix, we must convert some non-numeric features, such as ‘protocol-type’, ‘service’ and ‘flag’ features, into numeric form using one hot encoding. For the efficient training of neural networks, input data should be transformed by performing some pre-processing known as data normalization. It is used where inputs are widely divergent. Without such a process, networks would take a long time to train. Different schemes can be used to normalise the input data before it is fed to the input layer of neural network. We have used Min-Max normalization to normalize the attributes of our dataset, because of the fact that it preserves relationships between features. Mathematically,
+There are 38 numeric features and 3 non-numeric features in the NSL-KDD dataset.Because the input should be a numeric matrix, we must convert some non-numeric features, such as ‘protocol-type’, ‘service’ and ‘flag’ features, into numeric form using one hot encoding. For the efficient training of neural networks, input data should be transformed by performing some pre-processing known as data normalization. It is used where inputs are widely divergent. Without such a process, networks would take a long time to train. Different schemes can be used to normalise the input data before it is fed to the input layer of neural network. We have used Z-score normalization to normalize the attributes of our dataset. Z-score normalization refers to the process of normalizing every value in a dataset such that the mean of all of the values is 0 and the standard deviation is 1. Mathematically,
 \begin{equation}
-x_{i} = \frac{x_{i}- Min}{Max - Min}
+New value = \frac{x- \mu}{\lambda}
 \end{equation}
-\subsection{Feature Selection}
-As mentioned before, the benchmark dataset contains 41 features and 1 output class attribute. After applying Information Gain, Gain Ratio and Correlation based feature reduction algorithms, it has been found that some of the features such as num file creations, num outbound cmds, dst host count, is host login, dst host rerror rate, su attempted and num access files do not play significant role in detection of malicious traffic from normal patterns. More over some other features in NSL-KDD datasets have been zeroed which can also reduce the performance of IDS.
+where $x: $ Original value,\\ $\mu: $ Mean of data,\\ $\lambda: $ Standard deviation of data.
+\subsection{Feature Extraction}
+\vspace{-18pt}
+Principal component analysis, or PCA, is a statistical procedure that allows you to summarize the information content in large data tables by means of a smaller set of  “summary indices” that can be more easily visualized and analyzed.
+Algorithm for PCA is given as:
+\begin{enumerate}[label=\roman*.]
+\item $\mu = \frac{1}{p} \sum_{k=1}^{p} x_{k},$ where, $x_{k}$ is a pattern, $p =$ number of patterns, $x$ is the feature matrix.
+\item Find the covariance matrix\\
+$ C = \frac{1}{p} \sum_{k=1}^{p}(x_{k} - \mu)(x_{k} - \mu)^{T}$ where T represents matrix transposition.
+\item Compute Eigen values $\lambda_{i}$ and Eigen vectors $v_{i}$ of covariance matrix\\
+$Cv_{i} = \lambda_{i}v_{i}$\quad \quad \quad \quad$ (i = 1,2,3...q), q =$ number of features
+\item Estimating high-valued Eigen vectors
+\begin{enumerate}
+\item Arrange all the Eigen values $(\lambda_{i})$ in descending order.
+\item Choose a threshold value, $\theta$
+\item Number of high-valued $\lambda_{i}$ can be chosen so as to satisfy the relationship\\
+$(\sum_{i=1}^{s}\lambda_{i})(\sum_{i=1}^{q}\lambda_{i})^{-1} \geq \theta,$ where $s = $ number of high valued $\lambda_{i}$ chosen 
+\item Select Eigen vectors corresponding to selected high valued $\lambda_{i}$
+\end{enumerate}
+\item Extract low dimensional feature vectors (principal components) from raw feature matrix.\\
+$P = V^{T}x$, where $V$ is the matrix of principal components and $x$ is the feature matrix.
+\end{enumerate}
 \subsection{Train and test the model}
 \vspace{-18pt}
-The model used in this project for NIDS is: Long Shortterm Memory (LSTM)
+The model used in this project for NIDS is: Long Shortterm Memory (LSTM).
 \par 
 \subsubsection{Long Short term Memory (LSTM)}
 \vspace{-18pt}
@@ -313,7 +335,7 @@ False Positive Rate = \frac{FP}{FP + TN}
 \begin{figure}[h]
 \begin{center}
 	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=5in]{images/ucd4.jpg} 
+	\includegraphics[width=5in]{images/use.jpg} 
 	\caption{Use case Diagram of Network Intrusion Detection System} %figure name
 	\label{Use case Diagram of Network Intrusion Detection System} % for referencing
 \end{center}
@@ -324,7 +346,7 @@ False Positive Rate = \frac{FP}{FP + TN}
  \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=8in]{images/sdlc1.png} 
+	\includegraphics[width=6in]{images/sdlc1.png} 
 	\caption{Incremental Model} %figure name
 	\label{Incremental Model} % for referencing
 \end{center}

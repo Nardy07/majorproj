@@ -21,20 +21,20 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{saud2020analysis}
-A.~S. Saud and S.~Shakya, ``Analysis of look back period for stock price
-  prediction with rnn variants: A case study on banking sector of nepse,''
-  \emph{Procedia Computer Science}, vol. 167, pp. 788--798, 2020.
+\bibitem{yin2017deep}
+C.~Yin, Y.~Zhu, J.~Fei, and X.~He, ``A deep learning approach for intrusion
+  detection using recurrent neural networks,'' \emph{Ieee Access}, vol.~5, pp.
+  21\,954--21\,961, 2017.
 
-\bibitem{saud2019analysis}
-------, ``Analysis of gradient descent optimization techniques with gated
-  recurrent unit for stock price prediction: A case study on banking sector of
-  nepal stock exchange,'' \emph{Journal of Institute of Science and
-  Technology}, vol.~24, no.~2, pp. 17--21, 2019.
+\bibitem{al2020using}
+S.~Al-Emadi, A.~Al-Mohannadi, and F.~Al-Senaid, ``Using deep learning
+  techniques for network intrusion detection,'' in \emph{2020 IEEE
+  international conference on informatics, IoT, and enabling technologies
+  (ICIoT)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2020, pp. 171--176.
 
-\bibitem{pokhrel2022predicting}
-N.~R. Pokhrel, K.~R. Dahal, R.~Rimal, H.~N. Bhandari, R.~K. Khatri, B.~Rimal,
-  and W.~E. Hahn, ``Predicting nepse index price using deep learning models,''
-  \emph{Machine Learning with Applications}, vol.~9, p. 100385, 2022.
+\bibitem{xu2018intrusion}
+C.~Xu, J.~Shen, X.~Du, and F.~Zhang, ``An intrusion detection system using a
+  deep neural network with gated recurrent units,'' \emph{IEEE Access}, vol.~6,
+  pp. 48\,697--48\,707, 2018.
 
 \end{thebibliography}
