@@ -4,6 +4,7 @@ You can see 3 files with this Template:
 1. KECReportFormat.tex
 2. KECReport
 3. library.bib
+4. main.ipynb
 
 1. KECReportFormat.tex
 	- Most of the formatings for report are done in KECReportFormat.tex. 
@@ -21,4 +22,8 @@ You can see 3 files with this Template:
 	- This file can be typed according to format 
 	  or, other tools like "Mendeley" can be used to generate this file automatically. 
 
-- Other necessary information are in the files themselves. Please read the comments carefully.	
+4. main.ipynb
+	- Contains the main code for the IDS project.
+	- Other necessary information are commented in the code. 
+
+Please read the comments carefully.	
