@@ -3,7 +3,7 @@
 %Define Macros for Details of your Project
 \newcommand{\project}{Major Project} %Specify "Major Project" or "Minor Project"
 \newcommand{\projectTitle}{Network Intrusion Detection System Using LSTM} %specify "Title" of Your Project
-\newcommand{\doc}{Proposal} % specify the document you are preparing eg. "Proposal", "Mid-Term Report" or "Final Report" 
+\newcommand{\doc}{Final Report} % specify the document you are preparing eg. "Proposal", "Mid-Term Report" or "Final Report" 
 % Note that You have to sibmit "Final Report" for Pre-final defense as well.
 \newcommand{\subCode}{CT755} %specify Subject of Your Project
 \newcommand{\degree}{Bachelor in Computer Engineering} %specify your degree
@@ -18,13 +18,13 @@
 
 \newcommand{\submittedTo}{Department of Computer and Electronics Engineering} %specify your department
 \newcommand{\hod}{Er. Rabindra Khati} %specify Head ot the department
-\newcommand{\defYear}{2023} %Defense Year
-\newcommand{\defMonth}{August} %Defense Month- January, February, ...
-\newcommand{\defDay}{24} %specify Defense Day- 1, 2, ...
+\newcommand{\defYear}{2024} %Defense Year
+\newcommand{\defMonth}{February} %Defense Month- January, February, ...
+\newcommand{\defDay}{25} %specify Defense Day- 1, 2, ...
 
 \newif\ifhassupervisor
-\hassupervisorfalse % to display supervisor name use command- \hassupervisortrue
-\newcommand{\supervisor}{none} % Specify Name of Supervisor for Major Project (write "none" if no Supervisor is assigned)
+\hassupervisortrue % to display supervisor name use command- \hassupervisortrue
+\newcommand{\supervisor}{Babu Ram Dawadi} % Specify Name of Supervisor for Major Project (write "none" if no Supervisor is assigned)
 \newcommand{\degSup}{Supervisor's Designation\\Second Line of Designation (if required)} %Specify Designation of Supervisor for Major Project, use multiple lines (\\) if necessary
 \newcommand{\external}{External's Name} %Specify Name of External for Major Project (Required for Black Book)
 \newcommand{\degExternal}{External's Designation\\Second Line of Designation (if required)} %Specify Name of External for Major Project (Required for Black Book) , use multiple lines (\\) if necessary
@@ -50,23 +50,23 @@
 %Approval Page is required for FINAL(Black Book Binded) REPORT of MAJOR PROJECT only. Comment this section for other Reports. 
 %\KECapproval % defined in KECReportFormat.tex
 
-%\chapter*{Abstract} % The summary of your report
-%\addcontentsline{toc}{chapter}{Abstract}%to include this chapter in TOC 
-%Stock market prediction is when people try to figure out what the value of a stock will be in the future. They do this to make money by buying and selling stocks at the right time. Deep learning models are used to help predict stock prices. Recurrent neural networks are a type of deep learning model that is often used. There are different types of deep learning models that can be used depending on the situation. Predicting stock prices is difficult because there are many factors that can affect them. These factors can include things like politics, global economic conditions, and a company's financial performance. This project performs a comparative analysis of three deep learning models-the Long Short-term Memory (LSTM), Gated Recurrent Unit (GRU), and Vanilla RNN (VRNN)- in predicting the next day’s closing price of the Nepal Stock Exchange (NEPSE) index. The performances of employed models are compared using the standard assessment metric- Mean Absolute Percentage Error (MAPE).
-%\par
-%\textbf{\textit{Keywords$-$}} \emph{LSTM, GRU, VRNN, NEPSE, Deep learning}
+\chapter*{Abstract} % The summary of your report
+\addcontentsline{toc}{chapter}{Abstract}%to include %this chapter in TOC 
+blablablaa
+\par
+\textbf{\textit{Keywords$-$}} \emph{LSTM, SDN,  ,}
 
-%\chapter*{Acknowledgment}
-%\addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
-%We would like to express sincere gratitude to Department head Er. Rabindra Khati, Project Co-ordinator Er. Bishal Thapa and all the faculty members of Kantipur Engineering College for the continuous support during this project for their patience, motivation,enthusiasm, and immense knowledge. Their guidance helped us in all time of research, development and implementation of this project.   \par
-%Finally we would like to thank our family and friends for all the support and encouragement.\par
+\chapter*{Acknowledgment}
+\addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
+We would like to express sincere gratitude to Department head Er. Rabindra Khati, Project Co-ordinator Er. Bishal Thapa and all the faculty members of Kantipur Engineering College for the continuous support during this project for their patience, motivation,enthusiasm, and immense knowledge. Their guidance helped us in all time of research, development and implementation of this project.\par
+Finally we would like to thank our family and friends for all the support and encouragement.\par
 %to display members name under Acknowledgement
-%\begin{flushright}
-%\vskip -20pt
-%\setstretch{1.2}
-%\submittedBy
+\begin{flushright}
+\vskip -20pt
+\setstretch{1.2}
+\submittedBy
 
-%\end{flushright}
+\end{flushright}
 
 %to adjust spacings for TOC, LOF, LOT
 {
@@ -117,7 +117,7 @@
 \section{Background}\label{sec:bkgrnd}%label your section if you require to refer them somewhere else in your document.
 \vspace{-18pt}
 %nw3
-With the increasingly deep integration of the Internet and society, the Internet is changing the way in which people live, study and work, but the various security threats that we face are becoming more and more serious. How to identify various network attacks, especially unforeseen attacks, is an unavoidable key technical issue. An Intrusion Detection System (IDS), a significant research achievement in the information security field, can identify an invasion, which could be an ongoing invasion or an intrusion that has already occurred. In fact, intrusion detection is usually equivalent to a classification problem, such as a binary or a multiclass classification problem, i.e., identifying whether network traffic behavior is normal or anomalous, or a five-category classification problem, i.e., identifying whether it is normal or any one of the other four attack types: Denial of Service (DOS), User to Root (U2R), Probe (Probing) and Root to Local (R2L). In short, the main motivation of intrusion detection is to improve the accuracy of classifiers in effectively identifying the intrusive behavior.\par
+With the increasingly deep integration of the Internet and society, the Internet is changing the way in which people live, study and work, but the various security threats that we face are becoming more and more serious. How to identify various network attacks, especially unforeseen attacks, is an unavoidable key technical issue. An Intrusion Detection System (IDS), a significant research achievement in the information security field, can identify an invasion, which could be an ongoing invasion or an intrusion that has already occurred. In fact, intrusion detection is usually equivalent to a classification problem, such as a binary or a multi class classification problem, i.e., identifying whether network traffic behavior is normal or anomalous, or a five-category classification problem, i.e., identifying whether it is normal or any one of the other four attack types: Denial of Service (DOS), User to Root (U2R), Probe (Probing) and Root to Local (R2L). In short, the main motivation of intrusion detection is to improve the accuracy of classifiers in effectively identifying the intrusive behavior.\par
 Machine learning methodologies have been widely used in identifying various types of attacks, and a machine learning approach can help the network administrator take the corresponding measures for preventing intrusions. However, most of the traditional machine learning methodologies belong to shallow learning and often emphasize feature engineering and selection; they cannot effectively solve the massive intrusion data classification problem that arises in the face of a real network application environment. With the dynamic growth of data sets, multiple classification tasks will lead to decreased accuracy. In addition, shallow learning is unsuited to intelligent analysis and the forecasting requirements of high-dimensional learning with massive data. In contrast, deep learners have the potential to extract better representations from the data to create much better models. As a result, intrusion detection technology has experienced rapid development after falling into a relatively slow period.\cite{yin2017deep}%chinese
 \par
 A well-known method of securing the network is through implementing an Intrusion Detection System (IDS). IDS was originally implemented in 1980. The main aim of their work was to introduce a mechanism which differentiates between benign activities from malicious ones. Further research was carried out to optimizing this methodology to aid monitoring the network traffic in case of attacks, this system is now known as Network Intrusion Detection System (NIDS) . In NIDS, the detection system is inspecting the incoming and outgoing network traffic from all hosts in real time and based on certain criteria, it can detect and identify the attack, then, take the suitable security measures to stop or block it, which significantly reduces the risk of damage to the network. However, due to the rapid increase in the complexity of the cyber-security attacks, the current methods used in NIDS are failing to sufficiently address this issue.\cite{al2020using}
@@ -153,9 +153,10 @@ Network Intrusion Detection System has various applications in areas such as Ent
 \vspace{-18pt}
 \subsubsection{Software Requirements}
 \vspace{-10pt}
-\begin{itemize}
+\begin{itemize} 
 \item Windows/Linux/Mac
-\item Mininet, RYU controller
+\item VMware/Virtualbox
+\item Mininet, POX controller
 \item Jupyter Notebook
 \item Python IDE
 \end{itemize}
@@ -170,9 +171,9 @@ Network Intrusion Detection System has various applications in areas such as Ent
 \subsubsection{Software Requirements}
 \vspace{-10pt}
 \begin{itemize}
-\item Web browser
-\item Visual studio code
-\item Pycharm
+\item Windows/Linux/Mac
+\item VMware/Virtualbox
+\item Mininet, POX controller
 \end{itemize}
 \vspace{-10pt}
 \subsubsection{Hardware Requirements}
@@ -201,7 +202,8 @@ The purpose of the economic feasibility assessment is to determine the positive 
 \begin{figure}[!h] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=5.5in]{images/mj.jpg} 
+	\includegraphics[width=6in,height=2in
+	]{images/real_n.png} 
 	\caption{Gantt Chart} %figure name
 	\label{figGanttChart} % for referencing
 \end{center}
@@ -220,11 +222,15 @@ Snort is the foremost Open Source Intrusion Prevention System (IPS) in the world
 \vspace{-10pt}
 \section{Related Works}
 \vspace{-18pt}
-In the paper "A Deep Learning Approach for Intrusion Detection Using Recurrent Neural Networks" a deep learning approach for intrusion detection system using recurrent neural networks(RNN-IDS) was proposed and the performance of the model was compared with traditional machine learning classification methods in both binary and multiclass classification. The study found that the proposed model improved the accuracy of the intrusion detection and provided a new research method.\cite{yin2017deep}
+In the paper "A Deep Learning Approach for Intrusion Detection Using Recurrent Neural Networks" a deep learning approach for intrusion detection system using recurrent neural networks(RNN-IDS) was proposed and the performance of the model was compared with traditional machine learning classification methods in both binary and multi-class classification. The study found that the proposed model improved the accuracy of the intrusion detection and provided a new research method.\cite{yin2017deep}
 \par 
 In "Using Deep Learning Techniques for Network Intrusion Detection", Convolutional Neural Networks and Recurrent Neural Networks were used to design an intelligent detection system that was able to detect different network intrusions and the performance of this model was evaluated using various evaluation metrices to find the best model for the intrusion detection system. Among the tested learning techniques, CNN was found to have outperformed the other techniques with accuracy, F1 score,recall and precision.\cite{al2020using}
 \par 
 In the paper "An Intrusion Detection System Using a Deep Neural Network With Gated Recurrent Units", deep learning theory was applied to intrusion detection system and a model was developed that had automatic feature extraction. In this paper, the characteristics of the time-related intrusion was considered and a novel IDS that consisted of a recurrent neural network with gated recurrent units (GRU), multilayer perceptron (MLP), and softmax module was proposed. Experiments on the datasets used showed that the proposed system had leading performance. Comparative experiments showed that the GRU is more suitable as a memory unit for IDS than LSTM, and proved that it is an effective simplification and improvement of LSTM. Moreover, the bidirectional GRU can reach the best performance compared with the other methods.\cite{xu2018intrusion}
+\par 
+In the paper "A Flow-Based Anomaly Detection Approach With Feature Selection Method Against DDoS Attacks in SDNs", the aim is to provide an overview of the existing research and studies related to DDoS attack detection in SDN networks. It aims to identify the gaps in the current knowledge and highlight the need for further research in this area. It also helps to establish the theoretical foundation for the proposed approach and validate its effectiveness by comparing it with previous works. Additionally, it provides a context for understanding the significance and relevance of the research conducted in the document.\cite{9810168}
+\par 
+In the paper "Securing IoT and SDN systems using deep-learning based automatic intrusion detection", Secured Automatic Two-level Intrusion Detection System (SATIDS) based on an improved Long Short-Term Memory (LSTM) network was proposed. Deep learning techniques, such as LSTM networks, have been utilized to detect and prevent network attacks. The use of LSTM networks in cyber defense has several benefits, including the ability to gain insights into threats and stay ahead of opponents. The SATIDS system aims to accurately identify suspicious activities and types of attacks in IoT and SDN networks. It utilizes an improved LSTM network that classifies traffic into normal or attack, determines the attack category, and defines the attack sub-type. The system has been trained and tested using realistic datasets, such as the ToN-IoT and InSDN datasets. The performance of the SATIDS system has been compared to other IDSs, and it has been found to achieve better performance in terms of accuracy, precision, F1-score, and detection rate. The system has shown high accuracy in differentiating between normal and anomalous traffic, as well as in detecting specific types of attacks, such as backdoor attacks and DDOS attacks. Overall, the proposed SATIDS system based on LSTM network offers an effective approach to intrusion detection in IoT and SDN networks. It provides accurate identification of attacks and can help enhance the security of these networks.\cite{ELSAYED2023102211}
 \chapter{Methodology}
 \vspace{-18pt}
   \section{Working Mechanism}
@@ -242,19 +248,18 @@ depicted in the diagram given below:
 \newpage
 \subsection{Data set}
 \vspace{-18pt}
-The NSL-KDD dataset generated in 2009 is widely used in intrusion detection experiments. In the latest literature , all the researchers use the NSL-KDD as the benchmark dataset, which not only effectively solves
-the inherent redundant records problems of the KDD Cup 1999 dataset but also makes the number of records reasonable in the training set and testing set, in such a way that the classifier does not favour more frequent records. There are 41 features and 1 class label for every traffic record, and the features include basic features (No.1- No.10), content features (No.11 - No.22), and traffic features (No.23 - No.41). According to their characteristics, attacks in the dataset are categorized into four attack types: DoS (Denial of Service attacks), R2L (Root to Local attacks), U2R (User to Root attack), and Probe (Probing attacks). The testing set has some specific attack types that disappear in the training set, which allows it to provide a more realistic theoretical basis for intrusion detection.
+InSDN is a comprehensive Software-Defined Network (SDN) dataset for Intrusion detection system evaluation. The new dataset includes the benign and various attack categories  that can occur in different elements of the SDN standard. InSDN considers different attack, including DoS, DDoS, brute force attack, web applications, exploitation, probe, and botnet. Furthermore, the normal traffic in the generated data covers  various  popular  application services such as HTTPS, HTTP, SSL, DNS, Email, FTP, SSH, etc. The dataset was generated by using four virtual machines (VMs). The first virtual machine is a Kali Linux one and represents the attacker server. The secondary machine is a Ubuntu 16.4 one, and acts on the ONOS controller. Third is an Ubuntu 16.4 machine to serve for the Mininet and OVS switch. The forth virtual machine is a Linux one based on metasploitable 2 to provide vulnerable services for demonstrating common vulnerabilities.\cite{article}
 \begin{figure}[h] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=5in]{images/ftr1.jpg} 
-	\caption{Features of NSL-KDD dataset} %figure name
+	\includegraphics[width=3in]{images/ds2.png} 
+	\caption{Features of InSDN dataset} %figure name
 	\label{} % for referencing
 \end{center}
 \end{figure}
 \subsection{Data Preprocessing}
 \vspace{-18pt}
-There are 38 numeric features and 3 non-numeric features in the NSL-KDD dataset.Because the input should be a numeric matrix, we must convert some non-numeric features, such as ‘protocol-type’, ‘service’ and ‘flag’ features, into numeric form using one hot encoding. For the efficient training of neural networks, input data should be transformed by performing some pre-processing known as data normalization. It is used where inputs are widely divergent. Without such a process, networks would take a long time to train. Different schemes can be used to normalise the input data before it is fed to the input layer of neural network. We have used Z-score normalization to normalize the attributes of our dataset. Z-score normalization refers to the process of normalizing every value in a dataset such that the mean of all of the values is 0 and the standard deviation is 1. Mathematically,
+We used the InSDN dataset. Because the input should be a numeric matrix, we must convert some non-numeric features, into numeric form using label encoding. For the efficient training of neural networks, input data should be transformed by performing some pre-processing known as data normalization. It is used where inputs are widely divergent. Without such a process, networks would take a long time to train. Different schemes can be used to normalise the input data before it is fed to the input layer of neural network. We have used Z-score normalization to normalize the attributes of our dataset. Z-score normalization refers to the process of normalizing every value in a dataset such that the mean of all of the values is 0 and the standard deviation is 1. Mathematically,
 \begin{equation}
 New value = \frac{x- \mu}{\lambda}
 \end{equation}
@@ -303,13 +308,14 @@ H_t = tanh(S_t)*o_t
 	\label{LSTM} % for referencing
 \end{center}
 \end{figure}
+\newpage
 \subsection{Evaluation Metrics}
 \vspace{-18pt}
 The most important performance indicator (Accuracy, AC) of intrusion detection is used to measure the performance of the model. In addition to the accuracy, we introduce the detection rate and false positive rate. The True Positive (TP) is equivalent to those correctly rejected, and it denotes the number of anomaly records that are identified as anomaly. The False Positive (FP) is the equivalent of incorrectly rejected, and it denotes the number of normal records that are identified as anomaly. The True Negative (TN) is equivalent to those correctly admitted, and it denotes the number of normal records that are identified as normal. The False Negative (FN) is equivalent to those incorrectly admitted, and it denotes the number of anomaly records that are identified as normal.
 \begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
 \begin{center}
 	%\includegraphics[width = 3in]{images/logo.png}
-	\includegraphics[width=6in]{images/cm1.jpg} 
+	\includegraphics[width=6in]{images/confMat.png} 
 	\caption{Confusion Matrix} %figure name
 	\label{Confusion Matrix} % for referencing
 \end{center}
@@ -351,12 +357,57 @@ False Positive Rate = \frac{FP}{FP + TN}
 	\label{Incremental Model} % for referencing
 \end{center}
 \end{figure}
-Incremental model is a method of software engineering that combines the elements of waterfall model in iterative manner. It involves both development and maintenance. In this model requirements are broken down into multiple modules. Incremental development is done in steps from analysis design, implementation, testing/verification, maintenance. Each iteration passes through the requirements, design, coding and testing phases. The first increment is often a core product where the necessary requirements are addressed, and the extra features are added in the next increments. The core product is delivered to the client. Once the core product is analyzed by the client, there is plan development for the next increment.\\
-\chapter{Epilogue}
+Incremental model is a method of software engineering that combines the elements of waterfall model in iterative manner. It involves both development and maintenance. In this model requirements are broken down into multiple modules. Incremental development is done in steps from analysis design, implementation, testing/verification, maintenance. Each iteration passes through the requirements, design, coding and testing phases. The first increment is often a core product where the necessary requirements are addressed, and the extra features are added in the next increments. The core product is delivered to the client. Once the core product is analyzed by the client, there is plan development for the next increment.
+\chapter{Results and Discussion}
 \vspace{-18pt}
-\section{Expected Output}
+\section{Result}
 \vspace{-18pt}
-Upon the completion of the project, the system will be able to detect and notify anomalies in the network.
+We have completed the development of the project along with obtaining the desirable output. 
+
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+	\begin{center}
+		%\includegraphics[width = 3in]{images/logo.png}
+		\includegraphics[width=3in]{images/cReportTrain.png} 
+		\caption{Classification Report for Train dataset} %figure name
+		\label{Classification Report for Train dataset} 
+	\end{center}
+\end{figure}
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+	\begin{center}
+		%\includegraphics[width = 3in]{images/logo.png}
+		\includegraphics[width=4in]{images/confMatTest.png} 
+		\caption{Confusion Matrix for Test dataset} %figure name
+		\label{Confusion Matrix for Test dataset} 
+	\end{center}
+\end{figure}
+\begin{figure}[tbh] % tbh means top, bottom or here (priority: left to right)
+	\begin{center}
+		%\includegraphics[width = 3in]{images/logo.png}
+		\includegraphics[width=3in]{images/cReportTest.png} 
+		\caption{Classification Report for Test dataset} %figure name
+		\label{Classification Report for Test dataset} 
+	\end{center}
+\end{figure}
+\newpage
+In the above figures, 0 denotes DDoS class, 1 denotes Normal class and Probe class is denoted by 2.
+\section{Discussion}
+\vspace{-18pt}
+bla bla bla
+\section{Limitations}
+\begin{enumerate}
+	\item hmmm
+	\item mmmm
+\end{enumerate}
+\chapter{Conclusion and Future Enhancements}
+\vspace{-18pt}
+\section{Conclusion}
+\vspace{-18pt}
+blablablabla
+\section{Future Enhancements}
+\begin{enumerate}
+	\item bla bla
+	\item bla bla
+\end{enumerate}
 %Reference
 \renewcommand\bibname{References} % Change heading to References
 \bibliographystyle{IEEEtran} % to use IEEE Format for referencing
